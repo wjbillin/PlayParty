@@ -11,7 +11,7 @@ public class Tab extends JFrame
 {
   
   
-  Tab(String inTitle)
+  Tab(String inTitle, boolean client)
   {
     super(inTitle);
     
@@ -24,14 +24,17 @@ public class Tab extends JFrame
     HostQueueGUI hostQueue = new HostQueueGUI();
     HostLibraryGUI hostLibrary = new HostLibraryGUI(this);
     
-   /* JLabel label1 = new JLabel();
-    label1.setText("Introduction");
-    JLabel label2 = new JLabel();
-    label2.setText("History");*/
-    //one.add(label1);
-    //two.add(label2);
-    jtp.addTab("Host Library", hostLibrary);
-    jtp.addTab("Queue", hostQueue);
+
+    if(client)
+    {
+      jtp.addTab("Host Library", clientLibrary);
+      jtp.addTab("Queue", clientQueue);
+    }
+    else
+    {
+      jtp.addTab("Host Library", hostLibrary);
+      jtp.addTab("Queue", hostQueue);
+    }
     pack();
     setVisible(true);
     setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

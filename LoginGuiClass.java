@@ -1,4 +1,5 @@
 package eecs285.proj4.naugust;
+
 import java.awt.BorderLayout;
 import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
@@ -103,6 +104,8 @@ public class LoginGuiClass extends JDialog {//implements WindowListener {
         setVisible(false);
         //new ControlPannelGuiClass(LoginGuiClass.this, user + "'s party", true, dataBack).setVisible(true);
         // new tab  get args from Nick
+        new Tab(user+"'s party", false);
+        homeFrame.dispose();
       }
 
       pass = "";
@@ -119,3 +122,4 @@ public class LoginGuiClass extends JDialog {//implements WindowListener {
     }
   }
 }
+

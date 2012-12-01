@@ -68,7 +68,7 @@ public class HomeGuiClass extends JFrame {
 
     public void actionPerformed(ActionEvent e) {
       setVisible(false); 
-      new LoginGuiClass(HomeGuiClass.this, "Input Inventory Item").setVisible(true);
+      new LoginGuiClass(HomeGuiClass.this, "Login").setVisible(true);
 
     }
   }

@@ -4,6 +4,7 @@ import java.awt.BorderLayout;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JPanel;
 
 public class HostLibraryGUI extends LibraryGUI
 {
@@ -12,10 +13,12 @@ public class HostLibraryGUI extends LibraryGUI
   {
     super(parent);
     
-    JButton endParty = new JButton("End Party");
-    add(endParty, BorderLayout.SOUTH);
+    this.endPartyButton.setEnabled(true);
+    this.endPartyButton.setVisible(true);
     
-    updateJList(songList);
+    updateButton();
+    
+    //updateJList(songList);
     
   }
   

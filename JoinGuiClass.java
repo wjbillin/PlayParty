@@ -1,4 +1,5 @@
 package eecs285.proj4.naugust;
+
 import java.awt.BorderLayout;
 import java.awt.Panel;
 import java.awt.event.ActionEvent;
@@ -29,8 +30,6 @@ public class JoinGuiClass extends JDialog {//implements WindowListener  {
   //private ActionListener refreshButtonListener;
   private boolean refreshBeenPushed = false;
   private JFrame parent;
-
-
 
   public JoinGuiClass(JFrame homeFrame, String title) {
 
@@ -117,7 +116,7 @@ public class JoinGuiClass extends JDialog {//implements WindowListener  {
           sessionData selectedInList = behindDisplay.get(listedItems.getSelectedIndex());
           System.out.println("Joining: " + selectedInList.getName());
           setVisible(false);
-          new Tab(selectedInList.getName());
+          new Tab(selectedInList.getName(), true);
           parent.dispose();
         } else{
            refreshList();

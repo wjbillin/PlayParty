@@ -53,16 +53,21 @@ public class LibraryGUI extends JPanel {
     songList = new SongList();
     songJList = new JList<Song>(listModel);
     currentSongLabel = new JLabel("No song playing");
-    sortBox = new JComboBox<String>(Song.sortStrings);
+    sortBox = new JComboBox<String>(Song.stringsForSort);
     sortBox.setSelectedItem(null);
     sortBox.addActionListener(actionListener);
-    searchBy = new JComboBox<String>(Song.sortStrings);
+    searchBy = new JComboBox<String>(Song.stringsForSort);
     searchBy.addActionListener(actionListener);
 
     addSongButton = new JButton("Add Song to Queue");
     addSongButton.addActionListener(actionListener);
     partyButton = new JButton("Join Party");
     partyButton.addActionListener(actionListener);
+    endPartyButton = new JButton("End Party");
+    endPartyButton.setEnabled(false);
+    endPartyButton.setVisible(false);
+    endPartyButton.addActionListener(actionListener);
+    
     //currentPartyLabel = new JLabel(currentParty);
 
     JPanel panel1 = new JPanel(new FlowLayout());
@@ -84,7 +89,11 @@ public class LibraryGUI extends JPanel {
     bottomPanel = new JPanel(new FlowLayout());
     bottomPanel.add(addSongButton);
     bottomPanel.add(partyButton);
+    bottomPanel.add(endPartyButton);
 
+    //add(new JScrollPane(songJList));
+    //add(bottomPanel, BorderLayout.SOUTH);
+    
     add(new JScrollPane(songJList));
     add(bottomPanel, BorderLayout.SOUTH);
     
@@ -112,15 +121,27 @@ public class LibraryGUI extends JPanel {
       listModel.addElement(inSongList.get(i));
     }
   }
+  
+  public void updateButton()
+  {
+      partyButton.setEnabled(false);
+  }
+  
 
   public class CPActionListener implements ActionListener {
     public void actionPerformed(ActionEvent event){
       if(event.getSource().equals(sortBox)){
-        songList.sortSongList(Song.sortStrings[sortBox.getSelectedIndex()]);
+        songList.sortSongList(Song.stringsForSort[sortBox.getSelectedIndex()]);
         updateJList(songList);
       } else if(event.getSource().equals(search)){
-        SongList filteredList = (songList.searchFilter(Song.sortStrings[searchBy.getSelectedIndex()], searchField.getText()));
+        SongList filteredList = (songList.searchFilter(Song.stringsForSort[searchBy.getSelectedIndex()], searchField.getText()));
         updateJList(filteredList);
+      }
+      else if(event.getSource().equals(endPartyButton))
+      {
+        partyButton.setEnabled(true);
+        //END THE PARTY HERE
+        endPartyButton.setEnabled(false);
       }
       else if(event.getSource().equals(partyButton))
       {
@@ -129,6 +150,8 @@ public class LibraryGUI extends JPanel {
 
     }
   }
+  
+  
 
   private SongList songList;
   private JList<Song> songJList;
@@ -142,6 +165,7 @@ public class LibraryGUI extends JPanel {
   private CPActionListener actionListener;
   private JButton addSongButton;
   private JButton partyButton;
+  public JButton endPartyButton;
   private String currentParty;
   private JPanel bottomPanel;
 }

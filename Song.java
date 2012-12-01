@@ -90,7 +90,7 @@ public class Song {
   public final static String ARTIST_FIELD = "Artist";
   public final static String TITLE_FIELD = "Title";
   public final static String ALBUM_FIELD = "Album";
-  public final static String[] sortStrings = {ARTIST_FIELD, TITLE_FIELD, ALBUM_FIELD};
+  public final static String[] stringsForSort = {ARTIST_FIELD, TITLE_FIELD, ALBUM_FIELD};
 
   private String streamURL;
   private String artist;
