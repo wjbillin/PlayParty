@@ -16,7 +16,7 @@ import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 
 
-public class LoginGuiClass extends JDialog implements WindowListener {
+public class LoginGuiClass extends JDialog {//implements WindowListener {
 
   private JLabel UserName;
   private JLabel PassWord;
@@ -35,7 +35,7 @@ public class LoginGuiClass extends JDialog implements WindowListener {
         setDefaultCloseOperation(HIDE_ON_CLOSE);
     setResizable(false);
         setLocationRelativeTo(homeFrame);
-        addWindowListener(this);
+      //  addWindowListener(this);
     
     UserName = new JLabel("User Name: ");
     PassWord = new JLabel("Password:  ");
@@ -116,7 +116,7 @@ public class LoginGuiClass extends JDialog implements WindowListener {
           dispose();
         }
   }
-
+/*
   @Override
   public void windowClosed(WindowEvent arg0) {
     JFrame parentFrame = (JFrame) getParent();
@@ -158,5 +158,5 @@ public class LoginGuiClass extends JDialog implements WindowListener {
   public void windowOpened(WindowEvent e) {
     // TODO Auto-generated method stub
     
-  }
+  }*/
 }

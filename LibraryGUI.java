@@ -18,6 +18,8 @@ import javax.swing.JScrollPane;
 import javax.swing.JTextField;
 import javax.swing.ListModel;
 
+import eecs285.proj3.naugust.InputInventory;
+
 
 /**
  * Created with IntelliJ IDEA.
@@ -28,9 +30,18 @@ import javax.swing.ListModel;
  */
 public class LibraryGUI extends JPanel {
 
-  LibraryGUI (){
+  private JoinGuiClass joinParty;
+  private JFrame myParent;
+  
+  LibraryGUI (JFrame parent){
     super();
-
+    
+    joinParty = new JoinGuiClass(parent, "Join Party");
+    joinParty.pack();
+    //joinParty.setDefaultCloseOperation(HIDE_ON_CLOSE);
+    joinParty.setVisible(false);
+    
+    
     setLayout(new BorderLayout());
     actionListener = new CPActionListener();
     search = new JButton("Go");
@@ -52,7 +63,7 @@ public class LibraryGUI extends JPanel {
     addSongButton.addActionListener(actionListener);
     partyButton = new JButton("Join Party");
     partyButton.addActionListener(actionListener);
-    currentPartyLabel = new JLabel(currentParty);
+    //currentPartyLabel = new JLabel(currentParty);
 
     JPanel panel1 = new JPanel(new FlowLayout());
     panel1.add(new JLabel("Currently Listening to: "));
@@ -63,33 +74,42 @@ public class LibraryGUI extends JPanel {
     panel2.add(new JLabel("Search By: "));
     panel2.add(searchBy);
     panel2.add(searchField);
+    panel2.add(search);
 
     JPanel topPanel = new JPanel(new BorderLayout());
     topPanel.add(panel1, BorderLayout.NORTH);
     topPanel.add(panel2, BorderLayout.SOUTH);
     add(topPanel, BorderLayout.NORTH);
 
-    JPanel bottomPanel = new JPanel(new FlowLayout());
+    bottomPanel = new JPanel(new FlowLayout());
     bottomPanel.add(addSongButton);
     bottomPanel.add(partyButton);
-    bottomPanel.add(new JLabel("Current Party: "));
-    bottomPanel.add(currentPartyLabel);
 
     add(new JScrollPane(songJList));
     add(bottomPanel, BorderLayout.SOUTH);
     
-    for(int i = 0; i < 100; i++)
+    for(int i = 0; i < 50; i++)
     {
-      Song song = new Song("Blind", "JSON Derulo", "", "");
+      Song song = new Song("Ha", "JSON Derulo","album2", "", "");
       listModel.addElement(song);
+      songList.add(song);
+     // numberlistModel.addElement(i+1);
+    }
+    for(int i = 0; i < 50; i++)
+    {
+      Song song = new Song("Hello", "aaaa", "album", "", "");
+      listModel.addElement(song);
+      songList.add(song);
      // numberlistModel.addElement(i+1);
     }
   }
 
-  private void updateJList(SongList songlist){
+  private void updateJList(SongList inSongList){
     listModel.removeAllElements();
-    for(int i = 0; i < songList.size(); i++){
-      listModel.addElement(songlist.get(i));
+    System.out.println(inSongList.size());
+    for(int i = 0; i < inSongList.size(); i++){
+      System.out.println(inSongList.get(i));
+      listModel.addElement(inSongList.get(i));
     }
   }
 
@@ -101,6 +121,10 @@ public class LibraryGUI extends JPanel {
       } else if(event.getSource().equals(search)){
         SongList filteredList = (songList.searchFilter(Song.sortStrings[searchBy.getSelectedIndex()], searchField.getText()));
         updateJList(filteredList);
+      }
+      else if(event.getSource().equals(partyButton))
+      {
+        joinParty.setVisible(true);
       }
 
     }
@@ -118,6 +142,6 @@ public class LibraryGUI extends JPanel {
   private CPActionListener actionListener;
   private JButton addSongButton;
   private JButton partyButton;
-  private JLabel currentPartyLabel;
   private String currentParty;
+  private JPanel bottomPanel;
 }

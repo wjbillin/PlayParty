@@ -16,11 +16,12 @@ import java.util.Comparator;
  */
 public class Song {
 
-  Song(String title, String artist, String length, String streamURL){
+  Song(String title, String artist, String album, String length, String streamURL){
     this.artist = artist;
     this.length = length;
     this.title = title;
     this.streamURL = streamURL;
+    this.album = album;
   }
 
   //Song(JSONElement jsonElement){

@@ -51,19 +51,18 @@ public class QueueGUI extends JPanel
     bothDiffsPanel.add(numberList, BorderLayout.WEST);
     bothDiffsPanel.add(queueList);
     
-    currentQueueStatus = new JLabel("Current Queue: ", SwingConstants.CENTER);
+
+    currentQueueStatus = new JLabel("Currently listening to: No song ", SwingConstants.CENTER);
+
+    JPanel midPanel = new JPanel(new BorderLayout());
+    midPanel.add(currentQueueStatus, BorderLayout.SOUTH);
+    midPanel.add(new JScrollPane(bothDiffsPanel), BorderLayout.CENTER);
     
-    add(currentQueueStatus, "North");
-    
-    //add(numberList);
-    //add(queueList);
-    //add(bothDiffsPanel);
-    
-    add(new JScrollPane(bothDiffsPanel), BorderLayout.CENTER);
+    add(midPanel, BorderLayout.CENTER);
  
     for(int i = 0; i < 100; i++)
     {
-      Song song = new Song("Blind", "JSON Derulo", "", "");
+      Song song = new Song("Blind", "JSON Derulo", "album1", "", "");
       listModel.addElement(song);
       numberlistModel.addElement(i+1);
     }

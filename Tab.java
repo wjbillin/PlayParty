@@ -17,11 +17,12 @@ public class Tab extends JFrame
     
     JTabbedPane jtp = new JTabbedPane();
     getContentPane().add(jtp);
- 
     
-    LibraryGUI two = new LibraryGUI();
-    QueueGUI one = new QueueGUI();
     
+    LibraryGUI clientLibrary = new LibraryGUI(this);
+    QueueGUI clientQueue = new QueueGUI();
+    HostQueueGUI hostQueue = new HostQueueGUI();
+    HostLibraryGUI hostLibrary = new HostLibraryGUI(this);
     
    /* JLabel label1 = new JLabel();
     label1.setText("Introduction");
@@ -29,8 +30,8 @@ public class Tab extends JFrame
     label2.setText("History");*/
     //one.add(label1);
     //two.add(label2);
-    jtp.addTab("Tab1", one);
-    jtp.addTab("Tab2", two);
+    jtp.addTab("Host Library", hostLibrary);
+    jtp.addTab("Queue", hostQueue);
     pack();
     setVisible(true);
     setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -38,7 +39,7 @@ public class Tab extends JFrame
   
   @Override
   public Dimension getPreferredSize() {
-      return new Dimension(400, 500);
+      return new Dimension(500, 500);
   }
   
   

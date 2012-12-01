@@ -29,6 +29,7 @@ public class JoinGuiClass extends JDialog {//implements WindowListener  {
   private ActionListener cancelButtonListener;
   private ActionListener refreshButtonListener;
   private boolean refreshBeenPushed = false;
+  private JFrame parent;
     
 
   
@@ -40,6 +41,9 @@ public class JoinGuiClass extends JDialog {//implements WindowListener  {
     setLocationRelativeTo(homeFrame);
     //addWindowListener(this);
     setLayout(new BorderLayout());
+    
+    parent = new JFrame();
+    parent = homeFrame;
     
     //*****NICK's ****/
     
@@ -92,6 +96,7 @@ public class JoinGuiClass extends JDialog {//implements WindowListener  {
           setVisible(false); 
           //new ControlPannelGuiClass(JoinGuiClass.this, selectedInList.getName() + "'s party", true, selectedInList).setVisible(true);
           new Tab(selectedInList.getName());
+          parent.dispose();
           //goto ControlPannelGuiClass jdialog
         }
       }
