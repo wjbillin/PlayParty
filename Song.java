@@ -1,4 +1,9 @@
-import oracle.jrockit.jfr.settings.JSONElement;
+package eecs285.proj4.naugust;
+//package eecs285.proj4.naugust;
+
+import java.lang.*;
+//import net.sf.json.JSONObject;
+import oracle.jrockit.jfr.settings.*;
 
 import java.util.Comparator;
 
@@ -18,12 +23,18 @@ public class Song {
     this.streamURL = streamURL;
   }
 
-  Song(JSONElement jsonElement){
+  //Song(JSONElement jsonElement){
 
-  }
+//  }
 
   public String getSongStr(){
-    return "Artist: " + artist + " Title: " + title + " Album: " + album + length;
+    return "Artist: " + artist + " Title: " + title + " Album: " + album + " " + length;
+  }
+
+  @Override
+  public String toString()
+  {
+    return getSongStr();
   }
 
   //Defines compare for each field to be sorted by
@@ -57,10 +68,6 @@ public class Song {
     }
   }
 
-  public final static String ARTIST_FIELD = "artist";
-  public final static String TITLE_FIELD = "title";
-  public final static String ALBUM_FIELD = "album";
-
 
 
   public String getArtist() {
@@ -78,6 +85,11 @@ public class Song {
   public String getStreamURL() {
     return streamURL;
   }
+
+  public final static String ARTIST_FIELD = "Artist";
+  public final static String TITLE_FIELD = "Title";
+  public final static String ALBUM_FIELD = "Album";
+  public final static String[] sortStrings = {ARTIST_FIELD, TITLE_FIELD, ALBUM_FIELD};
 
   private String streamURL;
   private String artist;

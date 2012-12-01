@@ -1,5 +1,10 @@
+package eecs285.proj4.naugust;
+
+
 import java.util.ArrayList;
 import java.util.Collections;
+
+
 
 /**
  * Created with IntelliJ IDEA.
@@ -42,7 +47,7 @@ public class SongList extends ArrayList<Song>{
     return filteredList;
   }
 
-  public void sortInventoryItemList(String sortBy){
+  public void sortSongList(String sortBy){
     try {
       Collections.sort(this, Song.getComparator(sortBy));
     } catch (Exception invalidSortKey){
