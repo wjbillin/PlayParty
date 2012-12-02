@@ -104,7 +104,7 @@ public class LoginGuiClass extends JDialog {//implements WindowListener {
         setVisible(false);
         //new ControlPannelGuiClass(LoginGuiClass.this, user + "'s party", true, dataBack).setVisible(true);
         // new tab  get args from Nick
-        new Tab(user+"'s party", false);
+        new Tab(user, false);
         homeFrame.dispose();
       }
 
@@ -122,4 +122,3 @@ public class LoginGuiClass extends JDialog {//implements WindowListener {
     }
   }
 }
-

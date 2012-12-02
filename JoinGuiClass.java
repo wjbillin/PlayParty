@@ -1,18 +1,5 @@
 package eecs285.proj4.naugust;
 
-import java.awt.BorderLayout;
-import java.awt.Panel;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.util.ArrayList;
-
-import javax.swing.DefaultListModel;
-import javax.swing.JButton;
-import javax.swing.JDialog;
-import javax.swing.JFrame;
-import javax.swing.JList;
-import javax.swing.ListSelectionModel;
-
 public class JoinGuiClass extends JDialog {//implements WindowListener  {
 
   private JButton join;
