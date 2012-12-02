@@ -107,7 +107,7 @@ public class LoginGuiClass extends JDialog {//implements WindowListener {
         //new ControlPannelGuiClass(LoginGuiClass.this, user + "'s party", true, dataBack).setVisible(true);
 <<<<<<< HEAD
         // new tab  get args from Nick
-        new Tab(user+"'s party", false);
+        new Tab(user, false);
         homeFrame.dispose();
 =======
         new Tab(LoginGuiClass.this.getName(), false);
@@ -147,6 +147,9 @@ public class LoginGuiClass extends JDialog {//implements WindowListener {
     // TODO Auto-generated method stub
     
   }
+<<<<<<< HEAD
+}
+=======
 
   @Override
   public void windowDeactivated(WindowEvent e) {
@@ -173,3 +176,4 @@ public class LoginGuiClass extends JDialog {//implements WindowListener {
   }*/
 }
 
+>>>>>>> 464837691b4ad88218d3139b9fc526f68fcf5e21

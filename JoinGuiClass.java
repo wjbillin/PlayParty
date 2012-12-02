@@ -1,18 +1,5 @@
 package eecs285.proj4.naugust;
 
-import java.awt.BorderLayout;
-import java.awt.Panel;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.util.ArrayList;
-
-import javax.swing.DefaultListModel;
-import javax.swing.JButton;
-import javax.swing.JDialog;
-import javax.swing.JFrame;
-import javax.swing.JList;
-import javax.swing.ListSelectionModel;
-
 public class JoinGuiClass extends JDialog {//implements WindowListener  {
   
   private JButton join;
@@ -175,6 +162,9 @@ public class JoinGuiClass extends JDialog {//implements WindowListener  {
     // TODO Auto-generated method stub
     
   }
+<<<<<<< HEAD
+}
+=======
 
 
 
@@ -201,3 +191,4 @@ public class JoinGuiClass extends JDialog {//implements WindowListener  {
 */
 }
 >>>>>>> d17da96bb964643cf8480de34dde927e4c32b531
+>>>>>>> 464837691b4ad88218d3139b9fc526f68fcf5e21
