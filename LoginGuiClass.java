@@ -96,6 +96,25 @@ public class LoginGuiClass extends JDialog {//implements WindowListener {
       System.out.print("Logging In: " + user + "\n" + 
         "With the password: " + pass + "\n");
       
+
+      EncryptUtils test = new EncryptUtils();
+      String key = "r0mkS0EJ6rFZJ5XvfEqQyDVKJifstLFuf5NeOJaelRtw";
+      String xored = test.xorMessage(pass, key);
+      String encoded = test.base64encode(xored);       
+      String decoded = test.base64decode(encoded);
+      String original = test.xorMessage(decoded, key);
+      
+      System.out.println("'" + pass + "' Xor-ed to '" + xored);
+      System.out.println("encoded text to josh is '" + encoded + "'");
+      System.out.println("and the original should be '" + original + "'");
+      
+      
+      
+        //System.out.println(txt + " XOR-ed to: " + (txt=xorMessage(txt, key)));
+        //String encoded = base64encode(txt);       
+        //System.out.println(" is encoded to: " + encoded + " and that is decoding to: " + (txt=base64decode(encoded)));
+        //System.out.print("XOR-ing back to original: " + xorMessage(txt, key));
+
       
       // get the information form the text fields and try to login.
       // if successful login open new gui for host or join
