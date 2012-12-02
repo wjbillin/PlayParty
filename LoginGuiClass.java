@@ -27,55 +27,57 @@ public class LoginGuiClass extends JDialog {//implements WindowListener {
   private ActionListener ButListener;
   private ActionListener EnterListener;
   private ActionListener backButtonListener;
-  private JFrame homeFrame;
+  private JFrame parent;
 
-
+  
   public LoginGuiClass(JFrame homeFrame, String title) {
 
-    super(homeFrame, title, true);
-    this.homeFrame = homeFrame;
-    setDefaultCloseOperation(HIDE_ON_CLOSE);
+        super(homeFrame, title, true);
+        setDefaultCloseOperation(HIDE_ON_CLOSE);
     setResizable(false);
-    setLocationRelativeTo(homeFrame);
-    //  addWindowListener(this);
-
+        setLocationRelativeTo(homeFrame);
+      //  addWindowListener(this);
+        
+    parent = new JFrame();
+    parent = homeFrame;    
+    
     UserName = new JLabel("User Name: ");
     PassWord = new JLabel("Password:  ");
-
+    
     UN = new JTextField(20);
     PW = new JPasswordField(20);
     EnterListener = new LoginListener();
     PW.addActionListener(EnterListener);
-
+    
     setLayout(new BorderLayout());
     JPanel top = new JPanel(new FlowLayout());
     JPanel mid = new JPanel(new FlowLayout());
     JPanel bot = new JPanel(new FlowLayout());
-
+    
     top.add(UserName);
     top.add(UN);
     mid.add(PassWord);
     mid.add(PW);
-
-
-    back = new JButton("Back");
-    backButtonListener = new BackListener();
-    back.addActionListener(backButtonListener);
-    bot.add(back);
+    
+    
+        back = new JButton("Back");
+        backButtonListener = new BackListener();
+        back.addActionListener(backButtonListener);
+        bot.add(back);
     LogIn = new JButton("Log In");
     ButListener = new LoginListener();
     LogIn.addActionListener(ButListener);
     bot.add(LogIn);
-
+    
     add(top, BorderLayout.NORTH);
     add(mid, BorderLayout.CENTER);
     add(bot, BorderLayout.SOUTH);
     pack();
 
-
+    
   }
-
-
+  
+  
   public class LoginListener implements ActionListener {
 
     public void actionPerformed(ActionEvent e) {
@@ -83,42 +85,95 @@ public class LoginGuiClass extends JDialog {//implements WindowListener {
       String user = UN.getText();
       char[] temp = PW.getPassword();
       String pass =  new String(temp);
-
+      
       int x = 0;
       while (x < temp.length) {
         temp[x] = 0;
         x++;
       }
-      PW.setText("");
+          PW.setText("");
 
-      System.out.print("Logging In: " + user + "\n" +
-              "With the password: " + pass + "\n");
-
-
+      System.out.print("Logging In: " + user + "\n" + 
+        "With the password: " + pass + "\n");
+      
+      
       // get the information form the text fields and try to login.
       // if successful login open new gui for host or join
       // if fail pop up error and have the user try again
       isCorrect = true;
       sessionData dataBack = new sessionData("test");
       if (isCorrect) {
-        setVisible(false);
+        setVisible(false); 
         //new ControlPannelGuiClass(LoginGuiClass.this, user + "'s party", true, dataBack).setVisible(true);
+<<<<<<< HEAD
         // new tab  get args from Nick
         new Tab(user, false);
         homeFrame.dispose();
+=======
+        new Tab(LoginGuiClass.this.getName(), false);
+        parent.dispose();
+>>>>>>> d17da96bb964643cf8480de34dde927e4c32b531
       }
-
+      
       pass = "";
-    }
+    } 
   }
-
+  
   public class BackListener implements ActionListener {
 
-    public void actionPerformed(ActionEvent e) {
-      UN.setText("");
-      PW.setText("");
-      homeFrame.setVisible(true);
-      dispose();
-    }
+        public void actionPerformed(ActionEvent e) {
+          UN.setText("");
+          PW.setText("");
+          setVisible(false);
+          dispose();
+        }
   }
+/*
+  @Override
+  public void windowClosed(WindowEvent arg0) {
+    JFrame parentFrame = (JFrame) getParent();
+    parentFrame.setVisible(true);
+    
+  }
+
+  @Override
+  public void windowActivated(WindowEvent e) {
+    // TODO Auto-generated method stub
+    
+  }
+
+  @Override
+  public void windowClosing(WindowEvent e) {
+    // TODO Auto-generated method stub
+    
+  }
+<<<<<<< HEAD
 }
+=======
+
+  @Override
+  public void windowDeactivated(WindowEvent e) {
+    // TODO Auto-generated method stub
+    
+  }
+
+  @Override
+  public void windowDeiconified(WindowEvent e) {
+    // TODO Auto-generated method stub
+    
+  }
+
+  @Override
+  public void windowIconified(WindowEvent e) {
+    // TODO Auto-generated method stub
+    
+  }
+
+  @Override
+  public void windowOpened(WindowEvent e) {
+    // TODO Auto-generated method stub
+    
+  }*/
+}
+
+>>>>>>> 464837691b4ad88218d3139b9fc526f68fcf5e21
