@@ -1,0 +1,409 @@
+// !$*UTF8*$!
+{
+	1D3623240D0F684500981E51 /* Google_Play_ProjectAppDelegate.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {954, 494}}";
+			sepNavSelRange = "{523, 0}";
+			sepNavVisRange = "{0, 531}";
+		};
+	};
+	1D3623250D0F684500981E51 /* Google_Play_ProjectAppDelegate.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1965, 988}}";
+			sepNavSelRange = "{591, 0}";
+			sepNavVisRange = "{0, 1239}";
+		};
+	};
+	1D6058900D05DD3D006BFB54 /* Google Play Project */ = {
+		activeExec = 0;
+		executables = (
+			B3F5C5421644BE31002D16C5 /* Google Play Project */,
+		);
+	};
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = B3F5C5421644BE31002D16C5 /* Google Play Project */;
+		activeTarget = 1D6058900D05DD3D006BFB54 /* Google Play Project */;
+		addToTargets = (
+			1D6058900D05DD3D006BFB54 /* Google Play Project */,
+		);
+		breakpoints = (
+			B3F5C5FE16457F22002D16C5 /* notRecognize */,
+			B3F5C6041645808F002D16C5 /* -[NSObject(NSObject) doesNotRecognizeSelector:] */,
+		);
+		codeSenseManager = B3F5C5531644BE3E002D16C5 /* Code sense */;
+		executables = (
+			B3F5C5421644BE31002D16C5 /* Google Play Project */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = 1;
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					753,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 383785496;
+			PBXWorkspaceStateSaveDate = 383785496;
+		};
+		perUserProjectItems = {
+			B3C29A871704AC63008CD82D /* PBXTextBookmark */ = B3C29A871704AC63008CD82D /* PBXTextBookmark */;
+			B3C29A881704AC63008CD82D /* PBXTextBookmark */ = B3C29A881704AC63008CD82D /* PBXTextBookmark */;
+			B3C29A891704AC63008CD82D /* PBXTextBookmark */ = B3C29A891704AC63008CD82D /* PBXTextBookmark */;
+			B3C29A8A1704AC63008CD82D /* PBXTextBookmark */ = B3C29A8A1704AC63008CD82D /* PBXTextBookmark */;
+			B3C29A8E1704AC63008CD82D /* PBXTextBookmark */ = B3C29A8E1704AC63008CD82D /* PBXTextBookmark */;
+			B3C29ACA1704B0C9008CD82D /* PBXTextBookmark */ = B3C29ACA1704B0C9008CD82D /* PBXTextBookmark */;
+			B3C29AE51704B202008CD82D /* PBXTextBookmark */ = B3C29AE51704B202008CD82D /* PBXTextBookmark */;
+			B3C29B141704B7DA008CD82D /* PBXTextBookmark */ = B3C29B141704B7DA008CD82D /* PBXTextBookmark */;
+			B3C29B271704BD28008CD82D /* PBXTextBookmark */ = B3C29B271704BD28008CD82D /* PBXTextBookmark */;
+			B3C29B2D1704BDFF008CD82D /* PBXTextBookmark */ = B3C29B2D1704BDFF008CD82D /* PBXTextBookmark */;
+			B3C29B311704C1D4008CD82D /* PBXTextBookmark */ = B3C29B311704C1D4008CD82D /* PBXTextBookmark */;
+			B3C29B321704C1D4008CD82D /* PBXTextBookmark */ = B3C29B321704C1D4008CD82D /* PBXTextBookmark */;
+			B3C29B341706106D008CD82D /* PBXTextBookmark */ = B3C29B341706106D008CD82D /* PBXTextBookmark */;
+			B3F5C6A416459D99002D16C5 /* PlistBookmark */ = B3F5C6A416459D99002D16C5 /* PlistBookmark */;
+			B3F5C6A516459D99002D16C5 /* PBXTextBookmark */ = B3F5C6A516459D99002D16C5 /* PBXTextBookmark */;
+			B3F5C6A616459D99002D16C5 /* PBXTextBookmark */ = B3F5C6A616459D99002D16C5 /* PBXTextBookmark */;
+		};
+		sourceControlManager = B3F5C5521644BE3E002D16C5 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	29B97316FDCFA39411CA2CEA /* main.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {519, 237}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 391}";
+		};
+	};
+	32CA4F630368D1EE00C91783 /* Google_Play_Project_Prefix.pch */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {782, 237}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 207}";
+		};
+	};
+	B3C299D216F00DFD008CD82D /* GoogleMusicAPI.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {954, 469}}";
+			sepNavSelRange = "{228, 0}";
+			sepNavVisRange = "{0, 508}";
+		};
+	};
+	B3C299D316F00DFD008CD82D /* GoogleMusicAPI.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {931, 832}}";
+			sepNavSelRange = "{1936, 0}";
+			sepNavVisRange = "{48, 1355}";
+		};
+	};
+	B3C299D716F00FF2008CD82D /* HttpClient.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {931, 446}}";
+			sepNavSelRange = "{288, 0}";
+			sepNavVisRange = "{0, 991}";
+		};
+	};
+	B3C299D816F00FF2008CD82D /* HttpClient.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {691, 3276}}";
+			sepNavSelRange = "{926, 0}";
+			sepNavVisRange = "{745, 498}";
+		};
+	};
+	B3C299FD16FB97FC008CD82D /* FormBuilder.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {954, 469}}";
+			sepNavSelRange = "{327, 0}";
+			sepNavVisRange = "{0, 507}";
+		};
+	};
+	B3C299FE16FB97FC008CD82D /* FormBuilder.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {931, 780}}";
+			sepNavSelRange = "{1539, 88}";
+			sepNavVisRange = "{661, 1023}";
+			sepNavWindowFrame = "{{15, 215}, {750, 558}}";
+		};
+	};
+	B3C29A871704AC63008CD82D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623240D0F684500981E51 /* Google_Play_ProjectAppDelegate.h */;
+		name = "Google_Play_ProjectAppDelegate.h: 17";
+		rLen = 0;
+		rLoc = 523;
+		rType = 0;
+		vrLen = 531;
+		vrLoc = 0;
+	};
+	B3C29A881704AC63008CD82D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* Google_Play_ProjectAppDelegate.m */;
+		name = "Google_Play_ProjectAppDelegate.m: 23";
+		rLen = 0;
+		rLoc = 591;
+		rType = 0;
+		vrLen = 1239;
+		vrLoc = 0;
+	};
+	B3C29A891704AC63008CD82D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B3C299FD16FB97FC008CD82D /* FormBuilder.h */;
+		name = "FormBuilder.h: 17";
+		rLen = 0;
+		rLoc = 327;
+		rType = 0;
+		vrLen = 507;
+		vrLoc = 0;
+	};
+	B3C29A8A1704AC63008CD82D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B3F5C55C1644C2BF002D16C5 /* SplashViewController.h */;
+		name = "SplashViewController.h: 17";
+		rLen = 0;
+		rLoc = 420;
+		rType = 0;
+		vrLen = 514;
+		vrLoc = 0;
+	};
+	B3C29A8E1704AC63008CD82D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B3C299D216F00DFD008CD82D /* GoogleMusicAPI.h */;
+		name = "GoogleMusicAPI.h: 10";
+		rLen = 0;
+		rLoc = 228;
+		rType = 0;
+		vrLen = 508;
+		vrLoc = 0;
+	};
+	B3C29ACA1704B0C9008CD82D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B3F5C56C1644C964002D16C5 /* LoginViewController.h */;
+		name = "LoginViewController.h: 16";
+		rLen = 0;
+		rLoc = 446;
+		rType = 0;
+		vrLen = 547;
+		vrLoc = 0;
+	};
+	B3C29AE51704B202008CD82D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B3C299D716F00FF2008CD82D /* HttpClient.h */;
+		name = "HttpClient.h: 15";
+		rLen = 0;
+		rLoc = 288;
+		rType = 0;
+		vrLen = 991;
+		vrLoc = 0;
+	};
+	B3C29B141704B7DA008CD82D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B3C299D316F00DFD008CD82D /* GoogleMusicAPI.m */;
+		name = "GoogleMusicAPI.m: 59";
+		rLen = 0;
+		rLoc = 1936;
+		rType = 0;
+		vrLen = 1355;
+		vrLoc = 48;
+	};
+	B3C29B271704BD28008CD82D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B3C299D816F00FF2008CD82D /* HttpClient.m */;
+		name = "HttpClient.m: 206";
+		rLen = 167;
+		rLoc = 6733;
+		rType = 0;
+		vrLen = 1168;
+		vrLoc = 6116;
+	};
+	B3C29B2D1704BDFF008CD82D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B3C299FE16FB97FC008CD82D /* FormBuilder.m */;
+		name = "FormBuilder.m: 53";
+		rLen = 88;
+		rLoc = 1539;
+		rType = 0;
+		vrLen = 1023;
+		vrLoc = 661;
+	};
+	B3C29B311704C1D4008CD82D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B3F5C56D1644C964002D16C5 /* LoginViewController.m */;
+		name = "LoginViewController.m: 99";
+		rLen = 0;
+		rLoc = 3381;
+		rType = 0;
+		vrLen = 1017;
+		vrLoc = 2730;
+	};
+	B3C29B321704C1D4008CD82D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B3F5C55D1644C2BF002D16C5 /* SplashViewController.m */;
+		name = "SplashViewController.m: 80";
+		rLen = 0;
+		rLoc = 2110;
+		rType = 0;
+		vrLen = 982;
+		vrLoc = 34;
+	};
+	B3C29B341706106D008CD82D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B3F5C55D1644C2BF002D16C5 /* SplashViewController.m */;
+		name = "SplashViewController.m: 49";
+		rLen = 0;
+		rLoc = 1338;
+		rType = 0;
+		vrLen = 1113;
+		vrLoc = 950;
+	};
+	B3F5C5421644BE31002D16C5 /* Google Play Project */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 1;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = "Google Play Project";
+		savedGlobals = {
+		};
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	B3F5C5521644BE3E002D16C5 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	B3F5C5531644BE3E002D16C5 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	B3F5C55C1644C2BF002D16C5 /* SplashViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {954, 469}}";
+			sepNavSelRange = "{420, 0}";
+			sepNavVisRange = "{0, 514}";
+		};
+	};
+	B3F5C55D1644C2BF002D16C5 /* SplashViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1139, 1014}}";
+			sepNavSelRange = "{1338, 0}";
+			sepNavVisRange = "{950, 1113}";
+		};
+	};
+	B3F5C56C1644C964002D16C5 /* LoginViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {931, 446}}";
+			sepNavSelRange = "{446, 0}";
+			sepNavVisRange = "{0, 547}";
+		};
+	};
+	B3F5C56D1644C964002D16C5 /* LoginViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {931, 1703}}";
+			sepNavSelRange = "{3381, 0}";
+			sepNavVisRange = "{2730, 1017}";
+			sepNavWindowFrame = "{{15, 215}, {750, 558}}";
+		};
+	};
+	B3F5C5FE16457F22002D16C5 /* notRecognize */ = {
+		isa = PBXSymbolicBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 1;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		hitCount = 0;
+		ignoreCount = 0;
+		location = "";
+		modificationTime = 386186753.04497;
+		originalNumberOfMultipleMatches = 1;
+		state = 0;
+		symbolName = notRecognize;
+	};
+	B3F5C6041645808F002D16C5 /* -[NSObject(NSObject) doesNotRecognizeSelector:] */ = {
+		isa = PBXSymbolicBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 1;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		hitCount = 0;
+		ignoreCount = 0;
+		location = CoreFoundation;
+		modificationTime = 386186753.045032;
+		originalNumberOfMultipleMatches = 1;
+		state = 1;
+		symbolName = "-[NSObject(NSObject) doesNotRecognizeSelector:]";
+	};
+	B3F5C6A416459D99002D16C5 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* Google_Play_Project-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/joshbillingham/Documents/Google Play Project/Google_Play_Project-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775808;
+	};
+	B3F5C6A516459D99002D16C5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 29B97316FDCFA39411CA2CEA /* main.m */;
+		name = "main.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 391;
+		vrLoc = 0;
+	};
+	B3F5C6A616459D99002D16C5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 32CA4F630368D1EE00C91783 /* Google_Play_Project_Prefix.pch */;
+		name = "Google_Play_Project_Prefix.pch: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 207;
+		vrLoc = 0;
+	};
+}

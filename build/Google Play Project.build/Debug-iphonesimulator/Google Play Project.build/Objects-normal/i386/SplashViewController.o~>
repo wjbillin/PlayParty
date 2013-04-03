@@ -1,0 +1,5 @@
+/Users/joshbillingham/Documents/Google Play Project/SplashViewController.m:82: warning: property 'loginViewController' requires method '-loginViewController' to be defined - use @synthesize, @dynamic or provide a method implementation
+/Users/joshbillingham/Documents/Google Play Project/SplashViewController.m:82: warning: property 'loginViewController' requires the method 'setLoginViewController:' to be defined - use @synthesize, @dynamic or provide a method implementation
+/Users/joshbillingham/Documents/Google Play Project/SplashViewController.m:82: warning: incomplete implementation of class 'SplashViewController'
+/Users/joshbillingham/Documents/Google Play Project/SplashViewController.m:82: warning: method definition for '-joinButtonPressed:' not found
+/Users/joshbillingham/Documents/Google Play Project/SplashViewController.m:82: warning: method definition for '-hostButtonPressed:' not found

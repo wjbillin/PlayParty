@@ -1,0 +1,207 @@
+TGoogle Play Project
+v7
+r0
+t373603945.855304
+cCheck dependencies
+cProcessInfoPlistFile "/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator/Google Play Project.app/Info.plist" Google_Play_Project-Info.plist
+cCompileXIB "/Users/joshbillingham/Documents/Google Play Project/MainWindow.xib"
+cProcessPCH /var/folders/uC/uCysZdNJFCKGcfO-FgyHBk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Google_Play_Project_Prefix-ckpkdhjsrdtobhglbehumevazzjh/Google_Play_Project_Prefix.pch.gch Google_Play_Project_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Objects-normal/i386/main.o" "/Users/joshbillingham/Documents/Google Play Project/main.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Objects-normal/i386/Google_Play_ProjectAppDelegate.o" "/Users/joshbillingham/Documents/Google Play Project/Classes/Google_Play_ProjectAppDelegate.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cLd "/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator/Google Play Project.app/Google Play Project" normal i386
+cGenerateDSYMFile "/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator/Google Play Project.app.dSYM" "/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator/Google Play Project.app/Google Play Project"
+cTouch "/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator/Google Play Project.app"
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk
+c000000004D5C9B4E0000000000000110
+t1297914702
+s272
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004D54CFFA00000000002999B0
+t1297403898
+s2726320
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004D54CFE5000000000029DA70
+t1297403877
+s2742896
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004D54CFB80000000000001466
+t1297403832
+s5222
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004D5615B40000000000000AA1
+t1297487284
+s2721
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004D5616030000000000766870
+t1297487363
+s7759984
+
+N/Users/joshbillingham/Documents/Google Play Project/Classes/Google_Play_ProjectAppDelegate.h
+c00000000509486B1000000000000017D
+t1351911089
+s381
+i<UIKit/UIKit.h>
+
+N/Users/joshbillingham/Documents/Google Play Project/Classes/Google_Play_ProjectAppDelegate.m
+c00000000509486B10000000000000A10
+t1351911089
+s2576
+i"Google_Play_ProjectAppDelegate.h"
+
+N/Users/joshbillingham/Documents/Google Play Project/Google_Play_Project_Prefix.pch
+c00000000509486B100000000000000CF
+t1351911089
+s207
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/joshbillingham/Documents/Google Play Project/MainWindow.xib
+c00000000509486DD0000000000005B32
+t1351911133
+s23346
+
+N/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator/Google Play Project.app
+t1351911145
+s204
+
+N/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator/Google Play Project.app.dSYM
+t1351911145
+s102
+
+N/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator/Google Play Project.app/Google Play Project
+t1351911145
+s16056
+
+N/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator/Google Play Project.app/Info.plist
+t1351911144
+s645
+
+N/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator/Google Play Project.app/MainWindow.nib
+t1351911144
+s2513
+
+N/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator/Google Play Project.app/PkgInfo
+t1351911144
+s8
+
+N/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Objects-normal/i386/Google Play Project.LinkFileList
+c00000000509486E80000000000000158
+t1351911144
+s344
+
+N/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Objects-normal/i386/Google_Play_ProjectAppDelegate.o
+t1351911145
+s50320
+
+N/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Objects-normal/i386/main.o
+t1351911145
+s6336
+
+N/Users/joshbillingham/Documents/Google Play Project/main.m
+c00000000509486B10000000000000187
+t1351911089
+s391
+i<UIKit/UIKit.h>
+
+N/var/folders/uC/uCysZdNJFCKGcfO-FgyHBk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Google_Play_Project_Prefix-ckpkdhjsrdtobhglbehumevazzjh/Google_Play_Project_Prefix.pch.gch
+t1351911145
+s15814064
+
+NGoogle_Play_Project-Info.plist
+c00000000509486B1000000000000038D
+t1351911089
+s909
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies373603944#373603944#0(0"0(0#1#0"7162247809294409728#0"0#
+
+CCompileC "build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Objects-normal/i386/Google_Play_ProjectAppDelegate.o" "/Users/joshbillingham/Documents/Google Play Project/Classes/Google_Play_ProjectAppDelegate.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s373603945.732353
+e373603945.814166
+r1
+xCompileC
+xbuild/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Objects-normal/i386/Google_Play_ProjectAppDelegate.o
+x/Users/joshbillingham/Documents/Google Play Project/Classes/Google_Play_ProjectAppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@100"Compile /Users/joshbillingham/Documents/Google Play Project/Classes/Google_Play_ProjectAppDelegate.m373603945#373603945#0(0"0(0#0#92"/Users/joshbillingham/Documents/Google Play Project/Classes/Google_Play_ProjectAppDelegate.m8603606944#2379"    cd "/Users/joshbillingham/Documents/Google Play Project"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote "/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Google Play Project-generated-files.hmap" "-I/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Google Play Project-own-target-headers.hmap" "-I/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Google Play Project-all-target-headers.hmap" -iquote "/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Google Play Project-project-headers.hmap" "-F/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator" "-I/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator/include" "-I/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/DerivedSources/i386" "-I/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/DerivedSources" -include /var/folders/uC/uCysZdNJFCKGcfO-FgyHBk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Google_Play_Project_Prefix-ckpkdhjsrdtobhglbehumevazzjh/Google_Play_Project_Prefix.pch -c "/Users/joshbillingham/Documents/Google Play Project/Classes/Google_Play_ProjectAppDelegate.m" -o "/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Objects-normal/i386/Google_Play_ProjectAppDelegate.o"0#
+
+CCompileC "build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Objects-normal/i386/main.o" "/Users/joshbillingham/Documents/Google Play Project/main.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s373603945.730807
+e373603945.792456
+r1
+xCompileC
+xbuild/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Objects-normal/i386/main.o
+x/Users/joshbillingham/Documents/Google Play Project/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@66"Compile /Users/joshbillingham/Documents/Google Play Project/main.m373603945#373603945#0(0"0(0#0#58"/Users/joshbillingham/Documents/Google Play Project/main.m8605327008#2319"    cd "/Users/joshbillingham/Documents/Google Play Project"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote "/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Google Play Project-generated-files.hmap" "-I/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Google Play Project-own-target-headers.hmap" "-I/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Google Play Project-all-target-headers.hmap" -iquote "/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Google Play Project-project-headers.hmap" "-F/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator" "-I/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator/include" "-I/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/DerivedSources/i386" "-I/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/DerivedSources" -include /var/folders/uC/uCysZdNJFCKGcfO-FgyHBk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Google_Play_Project_Prefix-ckpkdhjsrdtobhglbehumevazzjh/Google_Play_Project_Prefix.pch -c "/Users/joshbillingham/Documents/Google Play Project/main.m" -o "/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Objects-normal/i386/main.o"0#
+
+CCompileXIB "/Users/joshbillingham/Documents/Google Play Project/MainWindow.xib"
+s373603944.532032
+e373603944.939011
+r1
+xCompileXIB
+x/Users/joshbillingham/Documents/Google Play Project/MainWindow.xib
+lSLF07#2@25"CompileXIB MainWindow.xib373603944#373603944#0(0"0(0#0#66"/Users/joshbillingham/Documents/Google Play Project/MainWindow.xib8600672864#627"    cd "/Users/joshbillingham/Documents/Google Play Project"    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.3    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator/Google Play Project.app/MainWindow.nib" "/Users/joshbillingham/Documents/Google Play Project/MainWindow.xib" --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk0#
+
+CGenerateDSYMFile "/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator/Google Play Project.app.dSYM" "/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator/Google Play Project.app/Google Play Project"
+s373603945.838692
+e373603945.852466
+r1
+xGenerateDSYMFile
+x/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator/Google Play Project.app.dSYM
+x/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator/Google Play Project.app/Google Play Project
+lSLF07#2@149"GenerateDSYMFile "build/Debug-iphonesimulator/Google Play Project.app.dSYM" "build/Debug-iphonesimulator/Google Play Project.app/Google Play Project"373603945#373603945#0(0"0(0#0#123"/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator/Google Play Project.app/Google Play Project8604168032#464"    cd "/Users/joshbillingham/Documents/Google Play Project"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil "/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator/Google Play Project.app/Google Play Project" -o "/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator/Google Play Project.app.dSYM"0#
+
+CLd "/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator/Google Play Project.app/Google Play Project" normal i386
+s373603945.814259
+e373603945.838587
+r1
+xLd
+x/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator/Google Play Project.app/Google Play Project
+xnormal
+xi386
+lSLF07#2@128"Link /Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator/Google Play Project.app/Google Play Project373603945#373603945#0(0"0(0#0#0"8604954528#1035"    cd "/Users/joshbillingham/Documents/Google Play Project"    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk "-L/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator" "-F/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator" -filelist "/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Objects-normal/i386/Google Play Project.LinkFileList" -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -o "/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator/Google Play Project.app/Google Play Project"0#
+
+CProcessInfoPlistFile "/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator/Google Play Project.app/Info.plist" Google_Play_Project-Info.plist
+s373603944.513691
+e373603944.531920
+r1
+xProcessInfoPlistFile
+x/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator/Google Play Project.app/Info.plist
+xGoogle_Play_Project-Info.plist
+lSLF07#2@38"Process Google_Play_Project-Info.plist373603944#373603944#0(0"0(0#0#82"/Users/joshbillingham/Documents/Google Play Project/Google_Play_Project-Info.plist7307775882123311104#560"    cd "/Users/joshbillingham/Documents/Google Play Project"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility Google_Play_Project-Info.plist -genpkginfo "/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator/Google Play Project.app/PkgInfo" -expandbuildsettings -format binary -platform iphonesimulator -o "/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator/Google Play Project.app/Info.plist"0#
+
+CProcessPCH /var/folders/uC/uCysZdNJFCKGcfO-FgyHBk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Google_Play_Project_Prefix-ckpkdhjsrdtobhglbehumevazzjh/Google_Play_Project_Prefix.pch.gch Google_Play_Project_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s373603944.939209
+e373603945.730523
+r1
+xProcessPCH
+x/var/folders/uC/uCysZdNJFCKGcfO-FgyHBk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Google_Play_Project_Prefix-ckpkdhjsrdtobhglbehumevazzjh/Google_Play_Project_Prefix.pch.gch
+xGoogle_Play_Project_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@41"Precompile Google_Play_Project_Prefix.pch373603944#373603945#0(0"0(0#0#82"/Users/joshbillingham/Documents/Google Play Project/Google_Play_Project_Prefix.pch8604686816#2184"    cd "/Users/joshbillingham/Documents/Google Play Project"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote "/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Google Play Project-generated-files.hmap" "-I/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Google Play Project-own-target-headers.hmap" "-I/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Google Play Project-all-target-headers.hmap" -iquote "/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Google Play Project-project-headers.hmap" "-F/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator" "-I/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator/include" "-I/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/DerivedSources/i386" "-I/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/DerivedSources" -c "/Users/joshbillingham/Documents/Google Play Project/Google_Play_Project_Prefix.pch" -o /var/folders/uC/uCysZdNJFCKGcfO-FgyHBk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Google_Play_Project_Prefix-ckpkdhjsrdtobhglbehumevazzjh/Google_Play_Project_Prefix.pch.gch0#
+
+CTouch "/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator/Google Play Project.app"
+s373603945.852554
+e373603945.855262
+r1
+xTouch
+x/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator/Google Play Project.app
+lSLF07#2@109"Touch /Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator/Google Play Project.app373603945#373603945#0(0"0(0#0#0"8590461024#320"    cd "/Users/joshbillingham/Documents/Google Play Project"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c "/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator/Google Play Project.app"0#
+

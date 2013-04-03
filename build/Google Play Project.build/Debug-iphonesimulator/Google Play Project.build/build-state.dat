@@ -1,0 +1,515 @@
+TGoogle Play Project
+v7
+r0
+t386186751.706628
+cCheck dependencies
+cProcessInfoPlistFile "/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator/Google Play Project.app/Info.plist" Google_Play_Project-Info.plist
+cCompileXIB "/Users/joshbillingham/Documents/Google Play Project/MainWindow.xib"
+cCompileXIB "/Users/joshbillingham/Documents/Google Play Project/LoginViewController.xib"
+cCompileXIB "/Users/joshbillingham/Documents/Google Play Project/Classes/SplashViewController.xib"
+cProcessPCH /var/folders/uC/uCysZdNJFCKGcfO-FgyHBk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Google_Play_Project_Prefix-ckpkdhjsrdtobhglbehumevazzjh/Google_Play_Project_Prefix.pch.gch Google_Play_Project_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Objects-normal/i386/main.o" "/Users/joshbillingham/Documents/Google Play Project/main.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Objects-normal/i386/Google_Play_ProjectAppDelegate.o" "/Users/joshbillingham/Documents/Google Play Project/Classes/Google_Play_ProjectAppDelegate.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Objects-normal/i386/SplashViewController.o" "/Users/joshbillingham/Documents/Google Play Project/SplashViewController.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Objects-normal/i386/LoginViewController.o" "/Users/joshbillingham/Documents/Google Play Project/LoginViewController.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Objects-normal/i386/GoogleMusicAPI.o" "/Users/joshbillingham/Documents/Google Play Project/GoogleMusicAPI.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Objects-normal/i386/HttpClient.o" "/Users/joshbillingham/Documents/Google Play Project/HttpClient.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Objects-normal/i386/FormBuilder.o" "/Users/joshbillingham/Documents/Google Play Project/FormBuilder.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cLd "/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator/Google Play Project.app/Google Play Project" normal i386
+cGenerateDSYMFile "/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator/Google Play Project.app.dSYM" "/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator/Google Play Project.app/Google Play Project"
+cTouch "/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator/Google Play Project.app"
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk
+c000000004D5C9B4E0000000000000110
+t1297914702
+s272
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004D54CFFA00000000002999B0
+t1297403898
+s2726320
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004D54CFE5000000000029DA70
+t1297403877
+s2742896
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004D54CFB80000000000001466
+t1297403832
+s5222
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004D5615B40000000000000AA1
+t1297487284
+s2721
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004D5616030000000000766870
+t1297487363
+s7759984
+
+N/Users/joshbillingham/Documents/Google Play Project/Classes/Google_Play_ProjectAppDelegate.h
+c000000005095584A0000000000000213
+t1351964746
+s531
+i<UIKit/UIKit.h>
+
+N/Users/joshbillingham/Documents/Google Play Project/Classes/Google_Play_ProjectAppDelegate.m
+c00000000509559DA0000000000000A40
+t1351965146
+s2624
+i"Google_Play_ProjectAppDelegate.h"
+
+N/Users/joshbillingham/Documents/Google Play Project/Classes/SplashViewController.xib
+c00000000509567F70000000000006678
+t1351968759
+s26232
+
+N/Users/joshbillingham/Documents/Google Play Project/FormBuilder.h
+c000000005152778000000000000001FB
+t1364359040
+s507
+i<Foundation/Foundation.h>
+
+N/Users/joshbillingham/Documents/Google Play Project/FormBuilder.m
+c0000000051547C5F0000000000000694
+t1364491359
+s1684
+i"FormBuilder.h"
+
+N/Users/joshbillingham/Documents/Google Play Project/GoogleMusicAPI.h
+c00000000515282FB00000000000001FC
+t1364361979
+s508
+i<Foundation/Foundation.h>
+i"HttpClient.h"
+
+N/Users/joshbillingham/Documents/Google Play Project/GoogleMusicAPI.m
+c0000000051547A1400000000000007E4
+t1364490772
+s2020
+i"GoogleMusicAPI.h"
+i"FormBuilder.h"
+
+N/Users/joshbillingham/Documents/Google Play Project/Google_Play_Project_Prefix.pch
+c00000000509486B100000000000000CF
+t1351911089
+s207
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/joshbillingham/Documents/Google Play Project/HttpClient.h
+c00000000515479F800000000000003DF
+t1364490744
+s991
+i<Foundation/Foundation.h>
+i"FormBuilder.h"
+
+N/Users/joshbillingham/Documents/Google Play Project/HttpClient.m
+c00000000515485030000000000001FE5
+t1364493571
+s8165
+i"HttpClient.h"
+
+N/Users/joshbillingham/Documents/Google Play Project/LoginViewController.h
+c00000000515478580000000000000223
+t1364490328
+s547
+i<UIKit/UIKit.h>
+
+N/Users/joshbillingham/Documents/Google Play Project/LoginViewController.m
+c00000000515487A50000000000000F8B
+t1364494245
+s3979
+i"LoginViewController.h"
+i"GoogleMusicAPI.h"
+
+N/Users/joshbillingham/Documents/Google Play Project/LoginViewController.xib
+c0000000050956FD70000000000006B88
+t1351970775
+s27528
+
+N/Users/joshbillingham/Documents/Google Play Project/MainWindow.xib
+c00000000509559780000000000006D3F
+t1351965048
+s27967
+
+N/Users/joshbillingham/Documents/Google Play Project/SplashViewController.h
+c000000005095638B0000000000000202
+t1351967627
+s514
+i<UIKit/UIKit.h>
+
+N/Users/joshbillingham/Documents/Google Play Project/SplashViewController.m
+c0000000051548A510000000000000843
+t1364494929
+s2115
+i"SplashViewController.h"
+i"LoginViewController.h"
+
+N/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator/Google Play Project.app
+t1364493951
+s272
+
+N/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator/Google Play Project.app.dSYM
+t1364493951
+s102
+
+N/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator/Google Play Project.app/Google Play Project
+t1364493951
+s47608
+
+N/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator/Google Play Project.app/Info.plist
+t1351911144
+s645
+
+N/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator/Google Play Project.app/LoginViewController.nib
+t1351970788
+s4466
+
+N/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator/Google Play Project.app/MainWindow.nib
+t1351966544
+s2512
+
+N/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator/Google Play Project.app/PkgInfo
+t1351911144
+s8
+
+N/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator/Google Play Project.app/SplashViewController.nib
+t1351969159
+s3331
+
+N/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Objects-normal/i386/FormBuilder.o
+t1364491361
+s16732
+
+N/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Objects-normal/i386/Google Play Project.LinkFileList
+c000000005152787400000000000004A9
+t1364359284
+s1193
+
+N/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Objects-normal/i386/GoogleMusicAPI.o
+t1364490830
+s16740
+
+N/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Objects-normal/i386/Google_Play_ProjectAppDelegate.o
+t1351966544
+s52540
+
+N/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Objects-normal/i386/HttpClient.o
+t1364493736
+s32384
+
+N/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Objects-normal/i386/LoginViewController.o
+t1364493951
+s51424
+
+N/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Objects-normal/i386/SplashViewController.o
+t1364490441
+s42704
+
+N/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Objects-normal/i386/main.o
+t1351911145
+s6336
+
+N/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/StaticAnalyzer/normal/i386/FormBuilder.plist
+t1364490708
+s276
+
+N/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/StaticAnalyzer/normal/i386/GoogleMusicAPI.plist
+t1364490830
+s276
+
+N/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/StaticAnalyzer/normal/i386/Google_Play_ProjectAppDelegate.plist
+t1364490233
+s276
+
+N/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/StaticAnalyzer/normal/i386/HttpClient.plist
+t1364490830
+s27203
+
+N/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/StaticAnalyzer/normal/i386/LoginViewController.plist
+t1364490830
+s276
+
+N/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/StaticAnalyzer/normal/i386/SplashViewController.plist
+t1364490466
+s276
+
+N/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/StaticAnalyzer/normal/i386/main.plist
+t1364490233
+s276
+
+N/Users/joshbillingham/Documents/Google Play Project/main.m
+c00000000509486B10000000000000187
+t1351911089
+s391
+i<UIKit/UIKit.h>
+
+N/var/folders/uC/uCysZdNJFCKGcfO-FgyHBk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Google_Play_Project_Prefix-ckpkdhjsrdtobhglbehumevazzjh/Google_Play_Project_Prefix.pch.gch
+t1351911145
+s15814064
+
+N/var/folders/uC/uCysZdNJFCKGcfO-FgyHBk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Google_Play_Project_Prefix-eczlrnfkcxxanjfwpwrkefzeikjj/Google_Play_Project_Prefix.pch.pth
+t1364490233
+s3353056
+
+NGoogle_Play_Project-Info.plist
+c00000000509486B1000000000000038D
+t1351911089
+s909
+
+CAnalyze "/Users/joshbillingham/Documents/Google Play Project/Classes/Google_Play_ProjectAppDelegate.m"
+s386183033.500880
+e386183033.674936
+r1
+xAnalyze
+x/Users/joshbillingham/Documents/Google Play Project/Classes/Google_Play_ProjectAppDelegate.m
+lSLF07#2@100"Analyze /Users/joshbillingham/Documents/Google Play Project/Classes/Google_Play_ProjectAppDelegate.m386183033#386183033#0(0"0(0#0#92"/Users/joshbillingham/Documents/Google Play Project/Classes/Google_Play_ProjectAppDelegate.m8624879200#2388"    cd "/Users/joshbillingham/Documents/Google Play Project"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote "/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Google Play Project-generated-files.hmap" "-I/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Google Play Project-own-target-headers.hmap" "-I/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Google Play Project-all-target-headers.hmap" -iquote "/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Google Play Project-project-headers.hmap" "-F/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator" "-I/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator/include" "-I/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/DerivedSources/i386" "-I/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/DerivedSources" -include /var/folders/uC/uCysZdNJFCKGcfO-FgyHBk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Google_Play_Project_Prefix-eczlrnfkcxxanjfwpwrkefzeikjj/Google_Play_Project_Prefix.pch --analyze "/Users/joshbillingham/Documents/Google Play Project/Classes/Google_Play_ProjectAppDelegate.m" -o "/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/StaticAnalyzer/normal/i386/Google_Play_ProjectAppDelegate.plist"0#
+
+CAnalyze "/Users/joshbillingham/Documents/Google Play Project/FormBuilder.m"
+s386183508.847565
+e386183508.910248
+r1
+xAnalyze
+x/Users/joshbillingham/Documents/Google Play Project/FormBuilder.m
+lSLF07#2@73"Analyze /Users/joshbillingham/Documents/Google Play Project/FormBuilder.m386183508#386183508#0(0"0(0#0#65"/Users/joshbillingham/Documents/Google Play Project/FormBuilder.m8671114336#2342"    cd "/Users/joshbillingham/Documents/Google Play Project"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote "/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Google Play Project-generated-files.hmap" "-I/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Google Play Project-own-target-headers.hmap" "-I/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Google Play Project-all-target-headers.hmap" -iquote "/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Google Play Project-project-headers.hmap" "-F/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator" "-I/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator/include" "-I/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/DerivedSources/i386" "-I/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/DerivedSources" -include /var/folders/uC/uCysZdNJFCKGcfO-FgyHBk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Google_Play_Project_Prefix-eczlrnfkcxxanjfwpwrkefzeikjj/Google_Play_Project_Prefix.pch --analyze "/Users/joshbillingham/Documents/Google Play Project/FormBuilder.m" -o "/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/StaticAnalyzer/normal/i386/FormBuilder.plist"0#
+
+CAnalyze "/Users/joshbillingham/Documents/Google Play Project/GoogleMusicAPI.m"
+s386183630.548688
+e386183630.613724
+r1
+xAnalyze
+x/Users/joshbillingham/Documents/Google Play Project/GoogleMusicAPI.m
+lSLF07#2@76"Analyze /Users/joshbillingham/Documents/Google Play Project/GoogleMusicAPI.m386183630#386183630#0(0"0(0#0#68"/Users/joshbillingham/Documents/Google Play Project/GoogleMusicAPI.m8623448736#2348"    cd "/Users/joshbillingham/Documents/Google Play Project"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote "/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Google Play Project-generated-files.hmap" "-I/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Google Play Project-own-target-headers.hmap" "-I/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Google Play Project-all-target-headers.hmap" -iquote "/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Google Play Project-project-headers.hmap" "-F/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator" "-I/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator/include" "-I/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/DerivedSources/i386" "-I/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/DerivedSources" -include /var/folders/uC/uCysZdNJFCKGcfO-FgyHBk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Google_Play_Project_Prefix-eczlrnfkcxxanjfwpwrkefzeikjj/Google_Play_Project_Prefix.pch --analyze "/Users/joshbillingham/Documents/Google Play Project/GoogleMusicAPI.m" -o "/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/StaticAnalyzer/normal/i386/GoogleMusicAPI.plist"0#
+
+CAnalyze "/Users/joshbillingham/Documents/Google Play Project/HttpClient.m"
+s386183630.585376
+e386183630.685675
+r1
+xAnalyze
+x/Users/joshbillingham/Documents/Google Play Project/HttpClient.m
+o/Users/joshbillingham/Documents/Google Play Project/HttpClient.m:96:33: warning: Potential leak of an object allocated on line 96 and stored into 'connection'
+o         NSURLConnection * connection = [[NSURLConnection alloc] initWithRequest:request delegate:self.delegate];
+o                                        ^
+o/Users/joshbillingham/Documents/Google Play Project/HttpClient.m:133:16: warning: Potential leak of an object allocated on line 133 and stored into 'connection'
+o                 connection = [[NSURLConnection alloc] initWithRequest:request delegate:delegate];
+o                              ^
+o/Users/joshbillingham/Documents/Google Play Project/HttpClient.m:131:16: warning: Potential leak of an object allocated on line 131 and stored into 'connection'
+o                 connection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
+o                              ^
+o3 warnings generated.
+lSLF07#2@72"Analyze /Users/joshbillingham/Documents/Google Play Project/HttpClient.m386183630#386183630#0(917"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m:96:33: warning: Potential leak of an object allocated on line 96 and stored into 'connection'         NSURLConnection * connection = [[NSURLConnection alloc] initWithRequest:request delegate:self.delegate];                                        ^/Users/joshbillingham/Documents/Google Play Project/HttpClient.m:133:16: warning: Potential leak of an object allocated on line 133 and stored into 'connection'                 connection = [[NSURLConnection alloc] initWithRequest:request delegate:delegate];                              ^/Users/joshbillingham/Documents/Google Play Project/HttpClient.m:131:16: warning: Potential leak of an object allocated on line 131 and stored into 'connection'                 connection = [[NSURLConnection alloc] initWithRequest:request delegate:self];                              ^3 warnings generated.3(0@77"Potential leak of an object allocated on line 96 and stored into 'connection'386183630#18446744073709551615#0#6(17@0"386183630#18446744073709551615#0#0(6@64"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m386183626#0#0#0#0#0"0(6@64"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m386183626#0#0#0#0#1(3@6@64"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m386183626#94#2#94#2#6@64"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m386183626#96#2#96#2#17@0"386183630#18446744073709551615#0#0(6@64"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m386183626#0#0#0#0#0"0(6@64"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m386183626#0#0#0#0#1(3@6@64"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m386183626#96#2#96#2#6@64"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m386183626#96#33#96#104#21@78"Method returns an Objective-C object with a +1 retain count (owning reference)386183630#18446744073709551615#0#0(6@64"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m386183626#96#33#0#0#0"1(6@64"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m386183626#96#33#96#104#78"Method returns an Objective-C object with a +1 retain count (owning reference)17@0"386183630#18446744073709551615#0#0(6@64"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m386183626#0#0#0#0#0"0(6@64"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m386183626#0#0#0#0#1(3@6@64"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m386183626#96#33#96#104#6@64"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m386183626#97#2#97#2#17@0"386183630#18446744073709551615#0#0(6@64"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m386183626#0#0#0#0#0"0(6@64"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m386183626#0#0#0#0#1(3@6@64"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m386183626#97#2#97#2#6@64"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m386183626#100#3#100#7#21@148"Object allocated on line 96 and stored into 'connection' is not referenced later in this execution path and has a retain count of +1 (object leaked)386183630#18446744073709551615#0#0(6@64"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m386183626#100#3#0#0#0"1(6@64"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m386183626#100#3#100#7#148"Object allocated on line 96 and stored into 'connection' is not referenced later in this execution path and has a retain count of +1 (object leaked)6@64"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m386183626#100#3#0#0#36"Memory (Core Foundation/Objective-C)0(4"Leak0@78"Potential leak of an object allocated on line 131 and stored into 'connection'386183630#18446744073709551615#0#10(17@0"386183630#18446744073709551615#0#0(6@64"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m386183626#0#0#0#0#0"0(6@64"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m386183626#0#0#0#0#1(3@6@64"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m386183626#119#2#119#2#6@64"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m386183626#121#2#121#2#17@0"386183630#18446744073709551615#0#0(6@64"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m386183626#0#0#0#0#0"0(6@64"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m386183626#0#0#0#0#1(3@6@64"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m386183626#121#2#121#2#6@64"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m386183626#122#3#122#3#17@0"386183630#18446744073709551615#0#0(6@64"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m386183626#0#0#0#0#0"0(6@64"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m386183626#0#0#0#0#1(3@6@64"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m386183626#122#3#122#3#6@64"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m386183626#129#2#129#2#17@0"386183630#18446744073709551615#0#0(6@64"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m386183626#0#0#0#0#0"0(6@64"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m386183626#0#0#0#0#1(3@6@64"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m386183626#129#2#129#2#6@64"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m386183626#130#2#130#2#17@0"386183630#18446744073709551615#0#0(6@64"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m386183626#0#0#0#0#0"0(6@64"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m386183626#0#0#0#0#1(3@6@64"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m386183626#130#2#130#2#6@64"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m386183626#131#3#131#3#17@0"386183630#18446744073709551615#0#0(6@64"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m386183626#0#0#0#0#0"0(6@64"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m386183626#0#0#0#0#1(3@6@64"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m386183626#131#3#131#3#6@64"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m386183626#131#16#131#78#21@78"Method returns an Objective-C object with a +1 retain count (owning reference)386183630#18446744073709551615#0#0(6@64"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m386183626#131#16#0#0#0"1(6@64"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m386183626#131#16#131#78#78"Method returns an Objective-C object with a +1 retain count (owning reference)17@0"386183630#18446744073709551615#0#0(6@64"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m386183626#0#0#0#0#0"0(6@64"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m386183626#0#0#0#0#1(3@6@64"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m386183626#131#16#131#78#6@64"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m386183626#136#2#136#2#17@0"386183630#18446744073709551615#0#0(6@64"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m386183626#0#0#0#0#0"0(6@64"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m386183626#0#0#0#0#1(3@6@64"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m386183626#136#2#136#2#6@64"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m386183626#139#3#139#7#21@149"Object allocated on line 131 and stored into 'connection' is not referenced later in this execution path and has a retain count of +1 (object leaked)386183630#18446744073709551615#0#0(6@64"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m386183626#139#3#0#0#0"1(6@64"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m386183626#139#3#139#7#149"Object allocated on line 131 and stored into 'connection' is not referenced later in this execution path and has a retain count of +1 (object leaked)6@64"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m386183626#139#3#0#0#36"Memory (Core Foundation/Objective-C)0(4"Leak0@78"Potential leak of an object allocated on line 133 and stored into 'connection'386183630#18446744073709551615#0#10(17@0"386183630#18446744073709551615#0#0(6@64"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m386183626#0#0#0#0#0"0(6@64"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m386183626#0#0#0#0#1(3@6@64"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m386183626#119#2#119#2#6@64"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m386183626#121#2#121#2#17@0"386183630#18446744073709551615#0#0(6@64"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m386183626#0#0#0#0#0"0(6@64"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m386183626#0#0#0#0#1(3@6@64"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m386183626#121#2#121#2#6@64"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m386183626#122#3#122#3#17@0"386183630#18446744073709551615#0#0(6@64"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m386183626#0#0#0#0#0"0(6@64"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m386183626#0#0#0#0#1(3@6@64"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m386183626#122#3#122#3#6@64"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m386183626#129#2#129#2#17@0"386183630#18446744073709551615#0#0(6@64"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m386183626#0#0#0#0#0"0(6@64"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m386183626#0#0#0#0#1(3@6@64"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m386183626#129#2#129#2#6@64"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m386183626#130#2#130#2#17@0"386183630#18446744073709551615#0#0(6@64"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m386183626#0#0#0#0#0"0(6@64"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m386183626#0#0#0#0#1(3@6@64"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m386183626#130#2#130#2#6@64"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m386183626#133#3#133#3#17@0"386183630#18446744073709551615#0#0(6@64"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m386183626#0#0#0#0#0"0(6@64"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m386183626#0#0#0#0#1(3@6@64"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m386183626#133#3#133#3#6@64"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m386183626#133#16#133#82#21@78"Method returns an Objective-C object with a +1 retain count (owning reference)386183630#18446744073709551615#0#0(6@64"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m386183626#133#16#0#0#0"1(6@64"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m386183626#133#16#133#82#78"Method returns an Objective-C object with a +1 retain count (owning reference)17@0"386183630#18446744073709551615#0#0(6@64"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m386183626#0#0#0#0#0"0(6@64"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m386183626#0#0#0#0#1(3@6@64"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m386183626#133#16#133#82#6@64"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m386183626#136#2#136#2#17@0"386183630#18446744073709551615#0#0(6@64"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m386183626#0#0#0#0#0"0(6@64"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m386183626#0#0#0#0#1(3@6@64"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m386183626#136#2#136#2#6@64"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m386183626#139#3#139#7#21@149"Object allocated on line 133 and stored into 'connection' is not referenced later in this execution path and has a retain count of +1 (object leaked)386183630#18446744073709551615#0#0(6@64"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m386183626#139#3#0#0#0"1(6@64"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m386183626#139#3#139#7#149"Object allocated on line 133 and stored into 'connection' is not referenced later in this execution path and has a retain count of +1 (object leaked)6@64"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m386183626#139#3#0#0#36"Memory (Core Foundation/Objective-C)0(4"Leak0#0#64"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m8627079776#2340"    cd "/Users/joshbillingham/Documents/Google Play Project"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote "/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Google Play Project-generated-files.hmap" "-I/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Google Play Project-own-target-headers.hmap" "-I/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Google Play Project-all-target-headers.hmap" -iquote "/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Google Play Project-project-headers.hmap" "-F/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator" "-I/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator/include" "-I/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/DerivedSources/i386" "-I/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/DerivedSources" -include /var/folders/uC/uCysZdNJFCKGcfO-FgyHBk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Google_Play_Project_Prefix-eczlrnfkcxxanjfwpwrkefzeikjj/Google_Play_Project_Prefix.pch --analyze "/Users/joshbillingham/Documents/Google Play Project/HttpClient.m" -o "/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/StaticAnalyzer/normal/i386/HttpClient.plist"0#
+
+CAnalyze "/Users/joshbillingham/Documents/Google Play Project/LoginViewController.m"
+s386183630.476013
+e386183630.548583
+r1
+xAnalyze
+x/Users/joshbillingham/Documents/Google Play Project/LoginViewController.m
+lSLF07#2@81"Analyze /Users/joshbillingham/Documents/Google Play Project/LoginViewController.m386183630#386183630#0(0"0(0#0#73"/Users/joshbillingham/Documents/Google Play Project/LoginViewController.m8600161024#2358"    cd "/Users/joshbillingham/Documents/Google Play Project"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote "/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Google Play Project-generated-files.hmap" "-I/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Google Play Project-own-target-headers.hmap" "-I/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Google Play Project-all-target-headers.hmap" -iquote "/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Google Play Project-project-headers.hmap" "-F/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator" "-I/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator/include" "-I/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/DerivedSources/i386" "-I/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/DerivedSources" -include /var/folders/uC/uCysZdNJFCKGcfO-FgyHBk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Google_Play_Project_Prefix-eczlrnfkcxxanjfwpwrkefzeikjj/Google_Play_Project_Prefix.pch --analyze "/Users/joshbillingham/Documents/Google Play Project/LoginViewController.m" -o "/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/StaticAnalyzer/normal/i386/LoginViewController.plist"0#
+
+CAnalyze "/Users/joshbillingham/Documents/Google Play Project/SplashViewController.m"
+s386183266.631568
+e386183266.701449
+r1
+xAnalyze
+x/Users/joshbillingham/Documents/Google Play Project/SplashViewController.m
+lSLF07#2@82"Analyze /Users/joshbillingham/Documents/Google Play Project/SplashViewController.m386183266#386183266#0(0"0(0#0#74"/Users/joshbillingham/Documents/Google Play Project/SplashViewController.m8626203104#2360"    cd "/Users/joshbillingham/Documents/Google Play Project"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote "/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Google Play Project-generated-files.hmap" "-I/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Google Play Project-own-target-headers.hmap" "-I/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Google Play Project-all-target-headers.hmap" -iquote "/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Google Play Project-project-headers.hmap" "-F/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator" "-I/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator/include" "-I/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/DerivedSources/i386" "-I/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/DerivedSources" -include /var/folders/uC/uCysZdNJFCKGcfO-FgyHBk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Google_Play_Project_Prefix-eczlrnfkcxxanjfwpwrkefzeikjj/Google_Play_Project_Prefix.pch --analyze "/Users/joshbillingham/Documents/Google Play Project/SplashViewController.m" -o "/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/StaticAnalyzer/normal/i386/SplashViewController.plist"0#
+
+CAnalyze "/Users/joshbillingham/Documents/Google Play Project/main.m"
+s386183033.499659
+e386183033.670380
+r1
+xAnalyze
+x/Users/joshbillingham/Documents/Google Play Project/main.m
+lSLF07#2@66"Analyze /Users/joshbillingham/Documents/Google Play Project/main.m386183033#386183033#0(0"0(0#0#58"/Users/joshbillingham/Documents/Google Play Project/main.m8625235712#2328"    cd "/Users/joshbillingham/Documents/Google Play Project"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote "/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Google Play Project-generated-files.hmap" "-I/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Google Play Project-own-target-headers.hmap" "-I/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Google Play Project-all-target-headers.hmap" -iquote "/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Google Play Project-project-headers.hmap" "-F/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator" "-I/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator/include" "-I/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/DerivedSources/i386" "-I/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/DerivedSources" -include /var/folders/uC/uCysZdNJFCKGcfO-FgyHBk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Google_Play_Project_Prefix-eczlrnfkcxxanjfwpwrkefzeikjj/Google_Play_Project_Prefix.pch --analyze "/Users/joshbillingham/Documents/Google Play Project/main.m" -o "/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/StaticAnalyzer/normal/i386/main.plist"0#
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies386186751#386186751#0(0"0(0#1#0"8626514368#0"0#
+
+CCompileC "build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Objects-normal/i386/FormBuilder.o" "/Users/joshbillingham/Documents/Google Play Project/FormBuilder.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s386184161.549040
+e386184161.701072
+r1
+xCompileC
+xbuild/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Objects-normal/i386/FormBuilder.o
+x/Users/joshbillingham/Documents/Google Play Project/FormBuilder.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@73"Compile /Users/joshbillingham/Documents/Google Play Project/FormBuilder.m386184161#386184161#0(0"0(0#0#65"/Users/joshbillingham/Documents/Google Play Project/FormBuilder.m8618441376#2333"    cd "/Users/joshbillingham/Documents/Google Play Project"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote "/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Google Play Project-generated-files.hmap" "-I/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Google Play Project-own-target-headers.hmap" "-I/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Google Play Project-all-target-headers.hmap" -iquote "/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Google Play Project-project-headers.hmap" "-F/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator" "-I/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator/include" "-I/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/DerivedSources/i386" "-I/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/DerivedSources" -include /var/folders/uC/uCysZdNJFCKGcfO-FgyHBk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Google_Play_Project_Prefix-ckpkdhjsrdtobhglbehumevazzjh/Google_Play_Project_Prefix.pch -c "/Users/joshbillingham/Documents/Google Play Project/FormBuilder.m" -o "/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Objects-normal/i386/FormBuilder.o"0#
+
+CCompileC "build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Objects-normal/i386/GoogleMusicAPI.o" "/Users/joshbillingham/Documents/Google Play Project/GoogleMusicAPI.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s386183630.279584
+e386183630.475603
+r1
+xCompileC
+xbuild/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Objects-normal/i386/GoogleMusicAPI.o
+x/Users/joshbillingham/Documents/Google Play Project/GoogleMusicAPI.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@76"Compile /Users/joshbillingham/Documents/Google Play Project/GoogleMusicAPI.m386183630#386183630#0(0"0(0#0#68"/Users/joshbillingham/Documents/Google Play Project/GoogleMusicAPI.m8669018016#2339"    cd "/Users/joshbillingham/Documents/Google Play Project"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote "/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Google Play Project-generated-files.hmap" "-I/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Google Play Project-own-target-headers.hmap" "-I/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Google Play Project-all-target-headers.hmap" -iquote "/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Google Play Project-project-headers.hmap" "-F/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator" "-I/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator/include" "-I/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/DerivedSources/i386" "-I/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/DerivedSources" -include /var/folders/uC/uCysZdNJFCKGcfO-FgyHBk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Google_Play_Project_Prefix-ckpkdhjsrdtobhglbehumevazzjh/Google_Play_Project_Prefix.pch -c "/Users/joshbillingham/Documents/Google Play Project/GoogleMusicAPI.m" -o "/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Objects-normal/i386/GoogleMusicAPI.o"0#
+
+CCompileC "build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Objects-normal/i386/Google_Play_ProjectAppDelegate.o" "/Users/joshbillingham/Documents/Google Play Project/Classes/Google_Play_ProjectAppDelegate.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s373659344.730406
+e373659344.973711
+r1
+xCompileC
+xbuild/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Objects-normal/i386/Google_Play_ProjectAppDelegate.o
+x/Users/joshbillingham/Documents/Google Play Project/Classes/Google_Play_ProjectAppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+o/Users/joshbillingham/Documents/Google Play Project/Classes/Google_Play_ProjectAppDelegate.m:84: warning: property 'navigationController' requires method '-navigationController' to be defined - use @synthesize, @dynamic or provide a method implementation
+o/Users/joshbillingham/Documents/Google Play Project/Classes/Google_Play_ProjectAppDelegate.m:84: warning: property 'navigationController' requires the method 'setNavigationController:' to be defined - use @synthesize, @dynamic or provide a method implementation
+lSLF07#2@100"Compile /Users/joshbillingham/Documents/Google Play Project/Classes/Google_Play_ProjectAppDelegate.m373659344#373659344#0(517"/Users/joshbillingham/Documents/Google Play Project/Classes/Google_Play_ProjectAppDelegate.m:84: warning: property 'navigationController' requires method '-navigationController' to be defined - use @synthesize, @dynamic or provide a method implementation/Users/joshbillingham/Documents/Google Play Project/Classes/Google_Play_ProjectAppDelegate.m:84: warning: property 'navigationController' requires the method 'setNavigationController:' to be defined - use @synthesize, @dynamic or provide a method implementation2(22@148"Property 'navigationController' requires method '-navigationController' to be defined - use @synthesize, @dynamic or provide a method implementation373659344#0#255#0(6@92"/Users/joshbillingham/Documents/Google Play Project/Classes/Google_Play_ProjectAppDelegate.m373657946#84#0#84#0#0"0(22@155"Property 'navigationController' requires the method 'setNavigationController:' to be defined - use @synthesize, @dynamic or provide a method implementation373659344#255#262#0(6@92"/Users/joshbillingham/Documents/Google Play Project/Classes/Google_Play_ProjectAppDelegate.m373657946#84#0#84#0#0"0(0#0#92"/Users/joshbillingham/Documents/Google Play Project/Classes/Google_Play_ProjectAppDelegate.m8628838176#2379"    cd "/Users/joshbillingham/Documents/Google Play Project"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote "/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Google Play Project-generated-files.hmap" "-I/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Google Play Project-own-target-headers.hmap" "-I/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Google Play Project-all-target-headers.hmap" -iquote "/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Google Play Project-project-headers.hmap" "-F/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator" "-I/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator/include" "-I/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/DerivedSources/i386" "-I/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/DerivedSources" -include /var/folders/uC/uCysZdNJFCKGcfO-FgyHBk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Google_Play_Project_Prefix-ckpkdhjsrdtobhglbehumevazzjh/Google_Play_Project_Prefix.pch -c "/Users/joshbillingham/Documents/Google Play Project/Classes/Google_Play_ProjectAppDelegate.m" -o "/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Objects-normal/i386/Google_Play_ProjectAppDelegate.o"0#
+
+CCompileC "build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Objects-normal/i386/HttpClient.o" "/Users/joshbillingham/Documents/Google Play Project/HttpClient.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s386186535.809766
+e386186536.026636
+r1
+xCompileC
+xbuild/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Objects-normal/i386/HttpClient.o
+x/Users/joshbillingham/Documents/Google Play Project/HttpClient.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+o/Users/joshbillingham/Documents/Google Play Project/HttpClient.m: In function '-[HttpClient setDelegateOnce:]':
+o/Users/joshbillingham/Documents/Google Play Project/HttpClient.m:35: warning: local declaration of 'delegate' hides instance variable
+lSLF07#2@72"Compile /Users/joshbillingham/Documents/Google Play Project/HttpClient.m386186535#386186536#0(246"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m: In function '-[HttpClient setDelegateOnce:]':/Users/joshbillingham/Documents/Google Play Project/HttpClient.m:35: warning: local declaration of 'delegate' hides instance variable1(22@55"Local declaration of 'delegate' hides instance variable386186535#112#134#0(6@64"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m386186371#35#0#35#0#0"0(0#0#64"/Users/joshbillingham/Documents/Google Play Project/HttpClient.m8626968928#2331"    cd "/Users/joshbillingham/Documents/Google Play Project"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote "/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Google Play Project-generated-files.hmap" "-I/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Google Play Project-own-target-headers.hmap" "-I/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Google Play Project-all-target-headers.hmap" -iquote "/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Google Play Project-project-headers.hmap" "-F/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator" "-I/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator/include" "-I/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/DerivedSources/i386" "-I/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/DerivedSources" -include /var/folders/uC/uCysZdNJFCKGcfO-FgyHBk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Google_Play_Project_Prefix-ckpkdhjsrdtobhglbehumevazzjh/Google_Play_Project_Prefix.pch -c "/Users/joshbillingham/Documents/Google Play Project/HttpClient.m" -o "/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Objects-normal/i386/HttpClient.o"0#
+
+CCompileC "build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Objects-normal/i386/LoginViewController.o" "/Users/joshbillingham/Documents/Google Play Project/LoginViewController.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s386186751.455505
+e386186751.644341
+r1
+xCompileC
+xbuild/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Objects-normal/i386/LoginViewController.o
+x/Users/joshbillingham/Documents/Google Play Project/LoginViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@81"Compile /Users/joshbillingham/Documents/Google Play Project/LoginViewController.m386186751#386186751#0(0"0(0#0#73"/Users/joshbillingham/Documents/Google Play Project/LoginViewController.m8626153984#2349"    cd "/Users/joshbillingham/Documents/Google Play Project"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote "/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Google Play Project-generated-files.hmap" "-I/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Google Play Project-own-target-headers.hmap" "-I/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Google Play Project-all-target-headers.hmap" -iquote "/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Google Play Project-project-headers.hmap" "-F/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator" "-I/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator/include" "-I/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/DerivedSources/i386" "-I/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/DerivedSources" -include /var/folders/uC/uCysZdNJFCKGcfO-FgyHBk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Google_Play_Project_Prefix-ckpkdhjsrdtobhglbehumevazzjh/Google_Play_Project_Prefix.pch -c "/Users/joshbillingham/Documents/Google Play Project/LoginViewController.m" -o "/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Objects-normal/i386/LoginViewController.o"0#
+
+CCompileC "build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Objects-normal/i386/SplashViewController.o" "/Users/joshbillingham/Documents/Google Play Project/SplashViewController.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s386183241.050350
+e386183241.144199
+r1
+xCompileC
+xbuild/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Objects-normal/i386/SplashViewController.o
+x/Users/joshbillingham/Documents/Google Play Project/SplashViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+o/Users/joshbillingham/Documents/Google Play Project/SplashViewController.m:80: warning: incomplete implementation of class 'SplashViewController'
+o/Users/joshbillingham/Documents/Google Play Project/SplashViewController.m:80: warning: method definition for '-joinButtonPressed:' not found
+lSLF07#2@82"Compile /Users/joshbillingham/Documents/Google Play Project/SplashViewController.m386183241#386183241#0(288"/Users/joshbillingham/Documents/Google Play Project/SplashViewController.m:80: warning: incomplete implementation of class 'SplashViewController'/Users/joshbillingham/Documents/Google Play Project/SplashViewController.m:80: warning: method definition for '-joinButtonPressed:' not found2(22@57"Incomplete implementation of class 'SplashViewController'386183241#0#146#0(6@74"/Users/joshbillingham/Documents/Google Play Project/SplashViewController.m373661370#80#0#80#0#38"incomplete implementation of class '*'0(22@53"Method definition for '-joinButtonPressed:' not found386183241#146#142#0(6@74"/Users/joshbillingham/Documents/Google Play Project/SplashViewController.m373661370#80#0#80#0#35"method definition for '*' not found0(0#0#74"/Users/joshbillingham/Documents/Google Play Project/SplashViewController.m8625514304#2351"    cd "/Users/joshbillingham/Documents/Google Play Project"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote "/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Google Play Project-generated-files.hmap" "-I/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Google Play Project-own-target-headers.hmap" "-I/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Google Play Project-all-target-headers.hmap" -iquote "/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Google Play Project-project-headers.hmap" "-F/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator" "-I/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator/include" "-I/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/DerivedSources/i386" "-I/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/DerivedSources" -include /var/folders/uC/uCysZdNJFCKGcfO-FgyHBk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Google_Play_Project_Prefix-ckpkdhjsrdtobhglbehumevazzjh/Google_Play_Project_Prefix.pch -c "/Users/joshbillingham/Documents/Google Play Project/SplashViewController.m" -o "/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Objects-normal/i386/SplashViewController.o"0#
+
+CCompileC "build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Objects-normal/i386/main.o" "/Users/joshbillingham/Documents/Google Play Project/main.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s373603945.730807
+e373603945.792456
+r1
+xCompileC
+xbuild/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Objects-normal/i386/main.o
+x/Users/joshbillingham/Documents/Google Play Project/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@66"Compile /Users/joshbillingham/Documents/Google Play Project/main.m373603945#373603945#0(0"0(0#0#58"/Users/joshbillingham/Documents/Google Play Project/main.m8605327008#2319"    cd "/Users/joshbillingham/Documents/Google Play Project"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote "/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Google Play Project-generated-files.hmap" "-I/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Google Play Project-own-target-headers.hmap" "-I/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Google Play Project-all-target-headers.hmap" -iquote "/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Google Play Project-project-headers.hmap" "-F/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator" "-I/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator/include" "-I/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/DerivedSources/i386" "-I/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/DerivedSources" -include /var/folders/uC/uCysZdNJFCKGcfO-FgyHBk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Google_Play_Project_Prefix-ckpkdhjsrdtobhglbehumevazzjh/Google_Play_Project_Prefix.pch -c "/Users/joshbillingham/Documents/Google Play Project/main.m" -o "/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Objects-normal/i386/main.o"0#
+
+CCompileXIB "/Users/joshbillingham/Documents/Google Play Project/Classes/SplashViewController.xib"
+s373661958.591516
+e373661959.076428
+r1
+xCompileXIB
+x/Users/joshbillingham/Documents/Google Play Project/Classes/SplashViewController.xib
+lSLF07#2@43"CompileXIB Classes/SplashViewController.xib373661958#373661959#0(0"0(0#0#84"/Users/joshbillingham/Documents/Google Play Project/Classes/SplashViewController.xib8606928608#655"    cd "/Users/joshbillingham/Documents/Google Play Project"    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.3    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator/Google Play Project.app/SplashViewController.nib" "/Users/joshbillingham/Documents/Google Play Project/Classes/SplashViewController.xib" --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk0#
+
+CCompileXIB "/Users/joshbillingham/Documents/Google Play Project/LoginViewController.xib"
+s373663588.235524
+e373663588.714112
+r1
+xCompileXIB
+x/Users/joshbillingham/Documents/Google Play Project/LoginViewController.xib
+lSLF07#2@34"CompileXIB LoginViewController.xib373663588#373663588#0(0"0(0#0#75"/Users/joshbillingham/Documents/Google Play Project/LoginViewController.xib8628680256#645"    cd "/Users/joshbillingham/Documents/Google Play Project"    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.3    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator/Google Play Project.app/LoginViewController.nib" "/Users/joshbillingham/Documents/Google Play Project/LoginViewController.xib" --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk0#
+
+CCompileXIB "/Users/joshbillingham/Documents/Google Play Project/MainWindow.xib"
+s373659343.767879
+e373659344.285289
+r1
+xCompileXIB
+x/Users/joshbillingham/Documents/Google Play Project/MainWindow.xib
+lSLF07#2@25"CompileXIB MainWindow.xib373659343#373659344#0(0"0(0#0#66"/Users/joshbillingham/Documents/Google Play Project/MainWindow.xib8628277664#627"    cd "/Users/joshbillingham/Documents/Google Play Project"    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.3    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator/Google Play Project.app/MainWindow.nib" "/Users/joshbillingham/Documents/Google Play Project/MainWindow.xib" --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk0#
+
+CGenerateDSYMFile "/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator/Google Play Project.app.dSYM" "/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator/Google Play Project.app/Google Play Project"
+s386186751.680190
+e386186751.702227
+r1
+xGenerateDSYMFile
+x/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator/Google Play Project.app.dSYM
+x/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator/Google Play Project.app/Google Play Project
+lSLF07#2@149"GenerateDSYMFile "build/Debug-iphonesimulator/Google Play Project.app.dSYM" "build/Debug-iphonesimulator/Google Play Project.app/Google Play Project"386186751#386186751#0(0"0(0#0#123"/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator/Google Play Project.app/Google Play Project8626617568#464"    cd "/Users/joshbillingham/Documents/Google Play Project"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil "/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator/Google Play Project.app/Google Play Project" -o "/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator/Google Play Project.app.dSYM"0#
+
+CLd "/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator/Google Play Project.app/Google Play Project" normal i386
+s386186751.644428
+e386186751.680082
+r1
+xLd
+x/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator/Google Play Project.app/Google Play Project
+xnormal
+xi386
+lSLF07#2@128"Link /Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator/Google Play Project.app/Google Play Project386186751#386186751#0(0"0(0#0#0"8669081760#1035"    cd "/Users/joshbillingham/Documents/Google Play Project"    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk "-L/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator" "-F/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator" -filelist "/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Objects-normal/i386/Google Play Project.LinkFileList" -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -o "/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator/Google Play Project.app/Google Play Project"0#
+
+CProcessInfoPlistFile "/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator/Google Play Project.app/Info.plist" Google_Play_Project-Info.plist
+s373603944.513691
+e373603944.531920
+r1
+xProcessInfoPlistFile
+x/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator/Google Play Project.app/Info.plist
+xGoogle_Play_Project-Info.plist
+lSLF07#2@38"Process Google_Play_Project-Info.plist373603944#373603944#0(0"0(0#0#82"/Users/joshbillingham/Documents/Google Play Project/Google_Play_Project-Info.plist7307775882123311104#560"    cd "/Users/joshbillingham/Documents/Google Play Project"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility Google_Play_Project-Info.plist -genpkginfo "/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator/Google Play Project.app/PkgInfo" -expandbuildsettings -format binary -platform iphonesimulator -o "/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator/Google Play Project.app/Info.plist"0#
+
+CProcessPCH /var/folders/uC/uCysZdNJFCKGcfO-FgyHBk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Google_Play_Project_Prefix-ckpkdhjsrdtobhglbehumevazzjh/Google_Play_Project_Prefix.pch.gch Google_Play_Project_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s373603944.939209
+e373603945.730523
+r1
+xProcessPCH
+x/var/folders/uC/uCysZdNJFCKGcfO-FgyHBk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Google_Play_Project_Prefix-ckpkdhjsrdtobhglbehumevazzjh/Google_Play_Project_Prefix.pch.gch
+xGoogle_Play_Project_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@41"Precompile Google_Play_Project_Prefix.pch373603944#373603945#0(0"0(0#0#82"/Users/joshbillingham/Documents/Google Play Project/Google_Play_Project_Prefix.pch8604686816#2184"    cd "/Users/joshbillingham/Documents/Google Play Project"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote "/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Google Play Project-generated-files.hmap" "-I/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Google Play Project-own-target-headers.hmap" "-I/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Google Play Project-all-target-headers.hmap" -iquote "/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Google Play Project-project-headers.hmap" "-F/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator" "-I/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator/include" "-I/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/DerivedSources/i386" "-I/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/DerivedSources" -c "/Users/joshbillingham/Documents/Google Play Project/Google_Play_Project_Prefix.pch" -o /var/folders/uC/uCysZdNJFCKGcfO-FgyHBk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Google_Play_Project_Prefix-ckpkdhjsrdtobhglbehumevazzjh/Google_Play_Project_Prefix.pch.gch0#
+
+CProcessPCH /var/folders/uC/uCysZdNJFCKGcfO-FgyHBk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Google_Play_Project_Prefix-eczlrnfkcxxanjfwpwrkefzeikjj/Google_Play_Project_Prefix.pch.pth Google_Play_Project_Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.analyzer
+s386183032.367288
+e386183033.498664
+r1
+xProcessPCH
+x/var/folders/uC/uCysZdNJFCKGcfO-FgyHBk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Google_Play_Project_Prefix-eczlrnfkcxxanjfwpwrkefzeikjj/Google_Play_Project_Prefix.pch.pth
+xGoogle_Play_Project_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.analyzer
+lSLF07#2@41"Precompile Google_Play_Project_Prefix.pch386183032#386183033#0(0"0(0#0#82"/Users/joshbillingham/Documents/Google Play Project/Google_Play_Project_Prefix.pch8603729376#2175"    cd "/Users/joshbillingham/Documents/Google Play Project"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote "/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Google Play Project-generated-files.hmap" "-I/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Google Play Project-own-target-headers.hmap" "-I/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Google Play Project-all-target-headers.hmap" -iquote "/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/Google Play Project-project-headers.hmap" "-F/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator" "-I/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator/include" "-I/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/DerivedSources/i386" "-I/Users/joshbillingham/Documents/Google Play Project/build/Google Play Project.build/Debug-iphonesimulator/Google Play Project.build/DerivedSources" -c "/Users/joshbillingham/Documents/Google Play Project/Google_Play_Project_Prefix.pch" -o /var/folders/uC/uCysZdNJFCKGcfO-FgyHBk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Google_Play_Project_Prefix-eczlrnfkcxxanjfwpwrkefzeikjj/Google_Play_Project_Prefix.pch.pth0#
+
+CTouch "/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator/Google Play Project.app"
+s386186751.702317
+e386186751.706587
+r1
+xTouch
+x/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator/Google Play Project.app
+lSLF07#2@109"Touch /Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator/Google Play Project.app386186751#386186751#0(0"0(0#0#0"8624092608#320"    cd "/Users/joshbillingham/Documents/Google Play Project"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c "/Users/joshbillingham/Documents/Google Play Project/build/Debug-iphonesimulator/Google Play Project.app"0#
+
