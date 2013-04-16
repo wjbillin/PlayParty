@@ -12,11 +12,11 @@
 @interface HttpClient : NSObject {
 }
 
-- (void)setDelegateOnce:(id)delegate;
+- (void)setClientOnce:(id)client;
 - (NSString*)extractAuthToken:(NSString*)response;
 - (NSMutableURLRequest*)prepareConnection:(NSString*)address withMethod:(NSString*)method;
 - (void)dispatchGet:(NSString*)address;
-- (void)dispatchPost:(NSString*)address withForm:(FormBuilder*)form isLogin:(bool)login;
+- (void)dispatchPost:(NSString*)address withForm:(FormBuilder*)form;
 - (void)setCookieFromResponse:(NSURLResponse*)response;
 - (void)setupAuthentication:(NSString*)response;
 - (NSURL*)adjustAddress:(NSString*)address;
@@ -25,6 +25,7 @@
 @property (nonatomic, retain) NSString* cookie;
 @property (nonatomic, retain) NSString* rawCookie;
 @property (nonatomic, retain) NSMutableData* receivedData;
-@property (nonatomic, retain) id delegate;
+@property (nonatomic, retain) id client;
+@property (nonatomic, assign) BOOL isStartup;
 
 @end

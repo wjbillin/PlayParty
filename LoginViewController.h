@@ -8,12 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
+@class PlaylistSelectController;
 @interface LoginViewController : UIViewController {
 }
 
 @property (nonatomic, retain) IBOutlet UITextField *emailInput;
 @property (nonatomic, retain) IBOutlet UITextField *passwordInput;
 @property (nonatomic, retain) NSMutableData* responseData;
+
+@property (nonatomic, retain) IBOutlet PlaylistSelectController* playlistSelectController;
 
 
 - (IBAction)submitButtonPressed:(id) sender;

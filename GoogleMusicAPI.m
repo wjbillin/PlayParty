@@ -52,9 +52,22 @@ NSString* HTTPS_PLAY_GOOGLE_COM_MUSIC_PLAY_SONGID = @"https://play.google.com/mu
 	
 	[form close];
 	
-	[self.client setDelegateOnce:delegate];
+	[self.client setClientOnce:delegate];
 	
-	[self.client dispatchPost:HTTPS_WWW_GOOGLE_COM_ACCOUNTS_CLIENT_LOGIN withForm:form isLogin:true];
+	[self.client dispatchPost:HTTPS_WWW_GOOGLE_COM_ACCOUNTS_CLIENT_LOGIN withForm:form];
+	
+}
+
+- (void)getPlaylists:(id)delegate {
+	
+	NSLog(@"In get playlists");
+	FormBuilder* form = [[[FormBuilder alloc] init] autorelease];
+	[form addField:@"json" withValue:@"{}"];
+	[form close];
+	
+	[self.client setClientOnce:delegate];
+	
+	[self.client dispatchPost:HTTPS_PLAY_GOOGLE_COM_MUSIC_SERVICES_LOADPLAYLIST withForm:form];
 	
 }
 /*- (void)getSongUrl:(Song)song (id<NSURLConnectionDelegate>)delegate {

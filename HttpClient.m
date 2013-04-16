@@ -20,19 +20,21 @@ NSString* HTTPS_PLAY_GOOGLE_COM_MUSIC_SERVICES = @"https://play.google.com/music
 @synthesize cookie;
 @synthesize rawCookie;
 @synthesize receivedData;
-@synthesize delegate;
+@synthesize client;
+@synthesize isStartup;
 
 - (id)init {
 	authorizationToken = [@"" retain];
 	cookie = [@"" retain];
 	rawCookie = [@"" retain];
 	receivedData = [[NSMutableData data] retain];
-	delegate = [self retain];
+	client = [self retain];
+	isStartup = true;
 	return self;
 }
 
-- (void)setDelegateOnce:(id)delegate {
-	self.delegate = delegate;
+- (void)setClientOnce:(id)delegate {
+	self.client = delegate;
 }
 
 - (NSString*)extractAuthToken:(NSString*)response {
@@ -86,7 +88,7 @@ NSString* HTTPS_PLAY_GOOGLE_COM_MUSIC_SERVICES = @"https://play.google.com/music
 	// }
 	NSMutableURLRequest* request = [self prepareConnection:address withMethod:@"GET"];
 	
-	NSURLConnection * connection = [[NSURLConnection alloc] initWithRequest:request delegate:self.delegate];
+	NSURLConnection * connection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
 	if (connection) {
 		// Create the NSMutableData to hold the received data.
 		// receivedData is an instance variable declared elsewhere.
@@ -107,7 +109,7 @@ NSString* HTTPS_PLAY_GOOGLE_COM_MUSIC_SERVICES = @"https://play.google.com/music
 	return streamToString(connection.getInputStream());*/
 }
 
-- (void)dispatchPost:(NSString*)address withForm:(FormBuilder*)form isLogin:(bool)login {
+- (void)dispatchPost:(NSString*)address withForm:(FormBuilder*)form {
 	
 	NSMutableURLRequest* request = [self prepareConnection:address withMethod:@"POST"];
 	NSString* string = form.content_type;
@@ -119,12 +121,7 @@ NSString* HTTPS_PLAY_GOOGLE_COM_MUSIC_SERVICES = @"https://play.google.com/music
 		return;
 	}
 	
-	NSURLConnection * connection; 
-	if (login) {
-		connection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
-	} else {
-		connection = [[NSURLConnection alloc] initWithRequest:request delegate:delegate];
-	}
+	NSURLConnection *connection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
 
 	if (connection) {
 		// Create the NSMutableData to hold the received data.
@@ -180,7 +177,7 @@ NSString* HTTPS_PLAY_GOOGLE_COM_MUSIC_SERVICES = @"https://play.google.com/music
 - (void)setupAuthentication:(NSString*)response {
 	self.authorizationToken = [self extractAuthToken:response];
 	NSLog(@"%@", self.authorizationToken);
-	[self dispatchPost:HTTPS_PLAY_GOOGLE_COM_MUSIC_LISTEN withForm:[FormBuilder getEmpty] isLogin:false];
+	[self dispatchPost:HTTPS_PLAY_GOOGLE_COM_MUSIC_LISTEN withForm:[FormBuilder getEmpty]];
 }
 
 - (NSURL*)adjustAddress:(NSString*)address {
@@ -206,6 +203,15 @@ NSString* HTTPS_PLAY_GOOGLE_COM_MUSIC_SERVICES = @"https://play.google.com/music
 	NSHTTPURLResponse* http_response = (NSHTTPURLResponse*)response;
 	int resp_code = [http_response statusCode];
 	NSLog(@"Response code in http client is %d", resp_code);
+	
+	if (resp_code != 200) {
+		// unauthorized or other bad things, tell client
+		[connection cancel];
+		[connection release];
+		NSString* error = @"Response code error: ";
+		error = [error stringByAppendingString:[NSString stringWithFormat:@"%d", resp_code]];
+		[self.client didErrorUrlLoad:error];
+	}
 }
 
 -(void)connection:(NSURLConnection*)connection didReceiveData:(NSData *)data {
@@ -218,9 +224,11 @@ NSString* HTTPS_PLAY_GOOGLE_COM_MUSIC_SERVICES = @"https://play.google.com/music
     [connection release];
 	
     // inform the user
-    NSLog(@"Connection failed! Error - %@ %@",
-          [error localizedDescription],
-          [[error userInfo] objectForKey:NSURLErrorFailingURLStringErrorKey]);
+	NSString* error_str = [NSString stringWithFormat:@"Connection failed! Error - %@ %@",
+						   [error localizedDescription],
+						   [[error userInfo] objectForKey:NSURLErrorFailingURLStringErrorKey]];
+	
+	[self.client didErrorUrlLoad:error_str];
 }
 
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection {
@@ -232,16 +240,23 @@ NSString* HTTPS_PLAY_GOOGLE_COM_MUSIC_SERVICES = @"https://play.google.com/music
 	
     [connection release];
 	
-	// login was successful, let's set up the authentication
-	NSString* response = [[[NSString alloc] initWithData:receivedData encoding:NSUTF8StringEncoding] autorelease];
-	[self setupAuthentication:response];
-}
+	
+	
+	if (self.isStartup) {
+		// this will fire off another post request to authorize listening to music
+		self.isStartup = false;
+		NSString* response = [[[NSString alloc] initWithData:receivedData encoding:NSUTF8StringEncoding] autorelease];
+		[self setupAuthentication:response];
+	} else {
+		[self.client didFinishUrlLoad:self.receivedData];
+	}
+}		
 
 - (void)dealloc {
 	[authorizationToken release];
 	[cookie release];
 	[rawCookie release];
-	[delegate release];
+	[client release];
 	[receivedData release];
 	
 	[super dealloc];

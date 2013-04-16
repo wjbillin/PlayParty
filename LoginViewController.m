@@ -7,6 +7,7 @@
 //
 
 #import "LoginViewController.h"
+#import "PlaylistSelectController.h"
 #import "GoogleMusicAPI.h"
 
 NSString* baseUrl = @"http://eecs285party.appspot.com/";
@@ -16,6 +17,7 @@ NSString* baseUrl = @"http://eecs285party.appspot.com/";
 @synthesize emailInput;
 @synthesize passwordInput;
 @synthesize responseData;
+@synthesize playlistSelectController;
 
 // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
 /*
@@ -54,50 +56,21 @@ NSString* baseUrl = @"http://eecs285party.appspot.com/";
 	// try login to google
 	GoogleMusicAPI* api = [GoogleMusicAPI sharedManager];
 	[api login:email withPassword:password withDelegate:self];
-	/*NSString *url = [baseUrl stringByAppendingString:@"/login"];
-	url = [url stringByAppendingString:email];
-	url = [url stringByAppendingString:@"&password=who"];
-	NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:url]
-											 cachePolicy:NSURLRequestUseProtocolCachePolicy
-										 timeoutInterval:60.0];
-	NSLog(@"The url is %@", url);
-	NSURLConnection *connection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
-	if (connection) {
-		responseData = [[NSMutableData alloc] init];
-	} else {
-		NSLog(@"Error establishing connection");
-	}*/
 }
 
-- (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response {
-	[self.responseData setLength:0];
+- (void)didSucceedUrlLoad:(NSMutableData*) data {
+	// set up table view
+	NSLog(@"Got good response, wooo!");
 	
-	NSHTTPURLResponse* http_response = (NSHTTPURLResponse*)response;
-	int resp_code = [http_response statusCode];
-	NSLog(@"Response code in login controller is %d", resp_code);
+	[[self navigationController] pushViewController:playlistSelectController animated:YES];
 	
 	GoogleMusicAPI* api = [GoogleMusicAPI sharedManager];
-	[api.client setCookieFromResponse:response];
-}
-
-- (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data {
-	NSLog(@"Did receive data!");
-	NSString* data_str = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-	NSLog(@"Data is %@", data_str);
-						   
-	//[self.responseData appendData:data]; // this is just the html of the front page in google music
+	[api getPlaylists:self.playlistSelectController];
 	
-	[data_str release];
 }
 
-- (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error {
-	NSLog(@"Errored Out!");
-}
-
-- (void)connectionDidFinishLoading:(NSURLConnection *)connection {
-	NSLog(@"Finished loading!");
-	// make request for playlists and show them in a new view contorller
-	[connection release];
+- (void)didErrorUrlLoad:(NSString*) error {
+	NSLog(@"ERROR in login view controller url response");
 }
 
 - (IBAction)backgroundTapPassword:(id) sender {
