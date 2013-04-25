@@ -14,5 +14,8 @@
 }
 
 @property (nonatomic, retain) NSArray* playlists;
+@property (nonatomic, retain) NSMutableArray* checked;
+
+- (IBAction) pushTabViewController:(id)sender;
 
 @end

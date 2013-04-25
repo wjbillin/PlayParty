@@ -9,14 +9,14 @@
 #import "LoginViewController.h"
 #import "PlaylistSelectController.h"
 #import "GoogleMusicAPI.h"
-
-NSString* baseUrl = @"http://eecs285party.appspot.com/";
+#import "PartyServerAPI.h"
 
 @implementation LoginViewController
 
 @synthesize emailInput;
 @synthesize passwordInput;
-@synthesize responseData;
+@synthesize partyTitle;
+
 @synthesize playlistSelectController;
 
 // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
@@ -59,13 +59,16 @@ NSString* baseUrl = @"http://eecs285party.appspot.com/";
 }
 
 - (void)didSucceedUrlLoad:(NSMutableData*) data {
-	// set up table view
+	// login to middle man
 	NSLog(@"Got good response, wooo!");
 	
 	[[self navigationController] pushViewController:playlistSelectController animated:YES];
 	
-	GoogleMusicAPI* api = [GoogleMusicAPI sharedManager];
-	[api getPlaylists:self.playlistSelectController];
+	PartyServerAPI* server_api = [PartyServerAPI sharedManager];
+	[server_api login:self.emailInput.text
+				 pass:self.passwordInput.text
+				title:self.partyTitle.text
+		 withDelegate:playlistSelectController];
 	
 }
 

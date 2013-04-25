@@ -97,16 +97,22 @@ NSString* HTTPS_PLAY_GOOGLE_COM_MUSIC_SERVICES = @"https://play.google.com/music
 		NSLog(@"failed to set up the connection");
 		// Inform the user that the connection failed.
 	}
+}
+
+- (void)dispatchGetWithRequest:(NSMutableURLRequest *)req query:(NSString*) query {
 	
-	/*connection.connect();
-	if(connection.getResponseCode() != 200)
-	{
-		throw new IllegalStateException("Statuscode " + connection.getResponseCode() + " not supported");
+	NSString* path = [[[req URL] absoluteString] stringByAppendingString:@"?"];
+	
+	[req setURL:[NSURL URLWithString:[path stringByAppendingString:query]]];
+	[req setHTTPMethod:@"GET"];
+	
+	NSURLConnection* connection = [[NSURLConnection alloc] initWithRequest:req delegate:self];
+	
+	if (connection) {
+		NSLog(@"set up connection ok");
+	} else {
+		NSLog(@"failed to set up connection");
 	}
-	
-	setCookie(connection);
-	
-	return streamToString(connection.getInputStream());*/
 }
 
 - (void)dispatchPost:(NSString*)address withForm:(FormBuilder*)form {
@@ -131,25 +137,22 @@ NSString* HTTPS_PLAY_GOOGLE_COM_MUSIC_SERVICES = @"https://play.google.com/music
 		NSLog(@"failed to set up the connection");
 		// Inform the user that the connection failed.
 	}
-	
-	
-	/*connection.connect();
-	connection.getOutputStream().write(form.getBytes());
-	if(connection.getResponseCode() != 200)
-	{
-		throw new IllegalStateException("Statuscode " + connection.getResponseCode() + " not supported");
-	}
-	
-	String response = streamToString(connection.getInputStream());
-	
-	setCookie(connection);
-	
-	if(!isStartup) *** call these methods where appropriate
-	{
-		return response;
-	}
-	return setupAuthentication(response);*/
 }
+
+- (void)dispatchPostWithRequest:(NSMutableURLRequest*)req body:(NSData*)body {
+	
+	[req setHTTPBody:body];
+	[req setHTTPMethod:@"POST"];
+	
+	NSURLConnection* connection = [[NSURLConnection alloc] initWithRequest:req delegate:self];
+	
+	if (connection) {
+		NSLog(@"set up connection ok");
+	} else {
+		NSLog(@"failed to set up connection");
+	}
+}
+
 
 - (void)setCookieFromResponse:(NSURLResponse*)response {
 	
@@ -158,17 +161,19 @@ NSString* HTTPS_PLAY_GOOGLE_COM_MUSIC_SERVICES = @"https://play.google.com/music
 	
 	NSString* string = [fields valueForKey:@"Set-Cookie"];
 	
-	if([string length] != 0 && cookie == NULL) {
+	NSLog(@"cookie from response is %@", string);
+	
+	if([string length] != 0 && cookie == @"") {
 		self.rawCookie = string;
 		NSRange startRange = [self.rawCookie rangeOfString:@"xt="];
 		NSRange targetRange;
 		targetRange.location = startRange.location + startRange.length;
 		targetRange.length = self.rawCookie.length - targetRange.location;
 		NSString * result = [self.rawCookie substringWithRange:targetRange];
-		NSRange endRange = [result rangeOfString:@"\n"];
+		NSRange endRange = [result rangeOfString:@";"];
 		endRange.length = endRange.location;
 		endRange.location = 0;
-		self.cookie = [self.rawCookie substringWithRange:endRange];
+		self.cookie = [result substringWithRange:endRange];
 		
 		NSLog(@"%@", self.cookie);
 	}
@@ -176,7 +181,7 @@ NSString* HTTPS_PLAY_GOOGLE_COM_MUSIC_SERVICES = @"https://play.google.com/music
 
 - (void)setupAuthentication:(NSString*)response {
 	self.authorizationToken = [self extractAuthToken:response];
-	NSLog(@"%@", self.authorizationToken);
+	//NSLog(@"auth token is %@", self.authorizationToken);
 	[self dispatchPost:HTTPS_PLAY_GOOGLE_COM_MUSIC_LISTEN withForm:[FormBuilder getEmpty]];
 }
 
@@ -188,7 +193,7 @@ NSString* HTTPS_PLAY_GOOGLE_COM_MUSIC_SERVICES = @"https://play.google.com/music
 		address = [address stringByAppendingString:cookie_str];
 	}
 	
-	NSLog(@"%@", address);
+	NSLog(@"final address is %@", address);
 	
 	return [NSURL URLWithString:address];
 }
@@ -236,7 +241,7 @@ NSString* HTTPS_PLAY_GOOGLE_COM_MUSIC_SERVICES = @"https://play.google.com/music
     // receivedData is declared as a method instance elsewhere
     NSLog(@"Succeeded! Received %d bytes of data",[self.receivedData length]);
 	
-	NSLog(@"%", [[[NSString alloc] initWithData:self.receivedData encoding:NSUTF8StringEncoding] autorelease]);
+	//NSLog(@"%@", [[[NSString alloc] initWithData:self.receivedData encoding:NSUTF8StringEncoding] autorelease]);
 	
     [connection release];
 	
@@ -248,7 +253,7 @@ NSString* HTTPS_PLAY_GOOGLE_COM_MUSIC_SERVICES = @"https://play.google.com/music
 		NSString* response = [[[NSString alloc] initWithData:receivedData encoding:NSUTF8StringEncoding] autorelease];
 		[self setupAuthentication:response];
 	} else {
-		[self.client didFinishUrlLoad:self.receivedData];
+		[self.client didSucceedUrlLoad:self.receivedData];
 	}
 }		
 

@@ -1,20 +1,18 @@
 //
-//  PlaylistSelect.m
+//  LibraryViewController.m
 //  Google Play Project
 //
-//  Created by William Joshua Billingham on 4/15/13.
+//  Created by William Joshua Billingham on 4/24/13.
 //  Copyright 2013 University of Michigan. All rights reserved.
 //
 
-#import	"LibraryViewController.h"
-#import "PlaylistSelectController.h"
-#import "QueueViewController.h"
-#import	"GoogleMusicAPI.h"
-#import "PartyServerAPI.h"
+#import "LibraryViewController.h"
+#import "JSONKit.h"
 
-@implementation PlaylistSelectController
+
+@implementation LibraryViewController
+
 @synthesize playlists;
-@synthesize checked;
 
 
 #pragma mark -
@@ -23,13 +21,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-	
-	NSLog(@"playlist select view loaded");
 
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-	UIBarButtonItem *doneButton = [[UIBarButtonItem alloc] initWithTitle:@"Done" style:UIBarButtonItemStylePlain
-																  target:self action:@selector(pushTabViewController:)];
-	self.navigationItem.rightBarButtonItem = doneButton;
+    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 
@@ -61,47 +55,29 @@
 }
 */
 
-- (IBAction)pushTabViewController:(id)sender {
-	
-	NSMutableArray* selected_playlists = [[NSMutableArray alloc] init];
-	for (int i = 0; i < [self.checked count]; i++) {
-		if ([[self.checked objectAtIndex:i] boolValue] == YES) {
-			NSLog(@"adding index %d to the selected playlists", i);
-			[selected_playlists addObject:[NSNumber numberWithInt:i]];
-		}
-	}
-	
-	LibraryViewController* libraryViewController = [[LibraryViewController alloc] init];
-	libraryViewController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Library" image:nil tag:0];
-	QueueViewController* queueViewController = [[QueueViewController alloc] init];
-	queueViewController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Queue" image:nil tag:1];
-	
-	NSArray* view_controllers = [[NSArray alloc] initWithObjects:libraryViewController, queueViewController, nil];
-	
-	UITabBarController* tabController = [[UITabBarController alloc] init];
-	[tabController setViewControllers:view_controllers];
-	[self presentModalViewController:tabController animated:YES];
-	
-	// form url to let middle man know what playlists we've chosen
-	PartyServerAPI* server_api = [PartyServerAPI sharedManager];
-	[server_api getPlaylists:selected_playlists withDelegate:libraryViewController];
-}
 
 #pragma mark -
 #pragma mark Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     // Return the number of sections.
-    return 1;
+	NSLog(@"returning %d sections", [self.playlists count]);
+    return [self.playlists count];
 }
 
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
-	NSLog(@"returning %u rows as count", self.playlists.count);
-    return self.playlists.count;
+	NSDictionary* playlist_full = [self.playlists objectAtIndex:section];
+	NSArray* playlist_songs = [playlist_full objectForKey:@"playlist"];
+    return [playlist_songs count];
 }
 
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+	
+    NSDictionary* playlist_full = [self.playlists objectAtIndex:section];
+	return [playlist_full objectForKey:@"title"];
+}
 
 // Customize the appearance of table view cells.
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -112,13 +88,17 @@
     if (cell == nil) {
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier] autorelease];
     }
+	
+	NSDictionary* playlist_full = [self.playlists objectAtIndex:indexPath.section];
+	NSArray* playlist_songs = [playlist_full objectForKey:@"playlist"];
+	NSDictionary* song = [playlist_songs objectAtIndex:indexPath.row];
     
     // Configure the cell...
-	NSArray* label = [[self.playlists objectAtIndex:indexPath.row] componentsSeparatedByString:@","];
-	NSString* main_label = [label objectAtIndex:0];
-	NSString* detail_label = [label objectAtIndex:1];
+	NSString* main_label = [song objectForKey:@"title"];
+	NSMutableString* detail_label = [NSMutableString stringWithString:[song objectForKey:@"artist"]];
+	[detail_label appendFormat:@" - %@", [song objectForKey:@"album"]];
 	
-	NSLog(@"%d", [[self.checked objectAtIndex:indexPath.row] boolValue]);
+	/*NSLog(@"%d", [[self.checked objectAtIndex:indexPath.row] boolValue]);
 	
 	if ([[self.checked objectAtIndex:indexPath.row] boolValue] == YES) {
 		cell.accessoryType = UITableViewCellAccessoryCheckmark;
@@ -126,16 +106,15 @@
 	} else {
 		NSLog(@"doesn't think it should be checked");
 		cell.accessoryType = UITableViewCellAccessoryNone;
-	}
-
+	}*/
+	
 	
 	NSLog(@"main label is %@", main_label);
 	NSLog(@"detail label is %@", detail_label);
-	detail_label = [detail_label stringByAppendingString:@" Songs"];
 	
 	cell.textLabel.text = main_label;
 	cell.detailTextLabel.text = detail_label;
-	
+    
     return cell;
 }
 
@@ -185,20 +164,24 @@
 - (void)didSucceedUrlLoad:(NSMutableData*)data {
 	// received playlist data
 	
-	NSLog(@"Successful url load of playlists");
+	NSLog(@"Successful url load of library songs");
 	
 	NSString* data_str = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
 	NSLog(@"%@", data_str);
 	
-	self.playlists = [data_str componentsSeparatedByString:@";"];
+	NSDictionary* result_dict = [data objectFromJSONData];
 	
-	self.checked = [[NSMutableArray alloc] init];
+	//self.playlists = [data_str componentsSeparatedByString:@";"];
+	 
+	self.playlists = [result_dict objectForKey:@"playlists"];
+	
+	/*self.checked = [[NSMutableArray alloc] init];
 	NSLog(@"playlists size is %d", [self.playlists count]);
 	for (int i = 0; i < [self.playlists count]; ++i) {
 		NSLog(@"iterating");
 		[self.checked addObject:[NSNumber numberWithBool:NO]];
 	}
-	NSLog(@"checked size is %d", [self.checked count]);
+	NSLog(@"checked size is %d", [self.checked count]);*/
 	
 	[data_str release];
 	
@@ -209,26 +192,11 @@
 	NSLog(@"ERROR: %@", error_str);
 }
 
-
 #pragma mark -
 #pragma mark Table view delegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     // Navigation logic may go here. Create and push another view controller.
-	
-	NSLog(@"checked size is %d", [self.checked count]);
-	
-	if ([tableView cellForRowAtIndexPath:indexPath].accessoryType == UITableViewCellAccessoryCheckmark) {
-		[tableView cellForRowAtIndexPath:indexPath].accessoryType = UITableViewCellAccessoryNone;
-		[self.checked replaceObjectAtIndex:indexPath.row withObject:[NSNumber numberWithBool:NO]];
-		NSLog(@"set checked array to false");
-	} else {
-		[tableView cellForRowAtIndexPath:indexPath].accessoryType = UITableViewCellAccessoryCheckmark;
-		[self.checked replaceObjectAtIndex:indexPath.row withObject:[NSNumber numberWithBool:YES]];
-		NSLog(@"set checked array to true");
-	}
-	
-	NSLog(@"after setting, bool is %d", [[self.checked objectAtIndex:indexPath.row] boolValue]);
     /*
     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
     // ...
@@ -236,7 +204,6 @@
     [self.navigationController pushViewController:detailViewController animated:YES];
     [detailViewController release];
     */
-	[self.tableView deselectRowAtIndexPath:indexPath animated:TRUE];
 }
 
 
@@ -258,7 +225,6 @@
 
 - (void)dealloc {
     [super dealloc];
-	[self.playlists release];
 }
 
 

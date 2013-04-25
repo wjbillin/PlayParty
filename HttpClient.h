@@ -16,7 +16,9 @@
 - (NSString*)extractAuthToken:(NSString*)response;
 - (NSMutableURLRequest*)prepareConnection:(NSString*)address withMethod:(NSString*)method;
 - (void)dispatchGet:(NSString*)address;
+- (void)dispatchGetWithRequest:(NSMutableURLRequest *)req query:(NSString*) query;
 - (void)dispatchPost:(NSString*)address withForm:(FormBuilder*)form;
+- (void)dispatchPostWithRequest:(NSMutableURLRequest *)req body:(NSData*)body;
 - (void)setCookieFromResponse:(NSURLResponse*)response;
 - (void)setupAuthentication:(NSString*)response;
 - (NSURL*)adjustAddress:(NSString*)address;

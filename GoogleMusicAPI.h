@@ -14,10 +14,9 @@
 
 @property (nonatomic,retain) HttpClient* client;
 
++ (id)sharedManager;
 - (void)login:(NSString*)email withPassword:(NSString*)pass withDelegate:(id)delegate;
 - (void)getPlaylists:(id)delegate;
 //- (void)getSongUrl:(Song)song (id<NSURLConnectionDelegate>)delegate;
-
-+ (id)sharedManager;
 
 @end
