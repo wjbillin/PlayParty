@@ -15,10 +15,12 @@
 }
 
 @property (nonatomic, retain) NSString* host;
-@property (nonatomic, retain) HttpClient* client;
 
 + (id) sharedManager;
 - (void)login:(NSString*)host pass:(NSString*)pass title:(NSString*)title withDelegate:(id)delegate;
 - (void)getPlaylists:(NSArray*)playlists withDelegate:(id)delegate;
+- (void)setTimestamp:(id)delegate withDate:(NSDate*)date;
+- (void)checkUpdates:(id)delegate lastModified:(NSDate*)date;
+- (void)addSongToQueue:(id)delegate songIndex:(NSIndexPath*)indexPath;
 
 @end

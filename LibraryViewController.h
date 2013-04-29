@@ -14,5 +14,6 @@
 }
 
 @property (nonatomic, retain) NSArray* playlists;
+@property (nonatomic, assign) BOOL isInitialized;
 
 @end

@@ -17,6 +17,6 @@
 + (id)sharedManager;
 - (void)login:(NSString*)email withPassword:(NSString*)pass withDelegate:(id)delegate;
 - (void)getPlaylists:(id)delegate;
-//- (void)getSongUrl:(Song)song (id<NSURLConnectionDelegate>)delegate;
+- (void)getSongUrl:(NSString*)songID withDelegate:(id)delegate;
 
 @end

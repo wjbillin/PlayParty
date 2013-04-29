@@ -73,8 +73,10 @@
 	
 	LibraryViewController* libraryViewController = [[LibraryViewController alloc] init];
 	libraryViewController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Library" image:nil tag:0];
+	libraryViewController.isInitialized = false;
 	QueueViewController* queueViewController = [[QueueViewController alloc] init];
 	queueViewController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Queue" image:nil tag:1];
+	queueViewController.tabBarItem.badgeValue = @"0";
 	
 	NSArray* view_controllers = [[NSArray alloc] initWithObjects:libraryViewController, queueViewController, nil];
 	

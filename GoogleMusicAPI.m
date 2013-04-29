@@ -15,7 +15,7 @@ NSString* HTTPS_PLAY_GOOGLE_COM_MUSIC_SERVICES_LOADALLTRACKS = @"https://play.go
 NSString* HTTPS_PLAY_GOOGLE_COM_MUSIC_SERVICES_LOADPLAYLIST = @"https://play.google.com/music/services/loadplaylist";
 NSString* HTTPS_PLAY_GOOGLE_COM_MUSIC_SERVICES_DELETEPLAYLIST = @"https://play.google.com/music/services/deleteplaylist";
 NSString* HTTPS_PLAY_GOOGLE_COM_MUSIC_SERVICES_ADDPLAYLIST = @"https://play.google.com/music/services/addplaylist";
-NSString* HTTPS_PLAY_GOOGLE_COM_MUSIC_PLAY_SONGID = @"https://play.google.com/music/play?u=0&songid=%1$s&pt=e";
+NSString* HTTPS_PLAY_GOOGLE_COM_MUSIC_PLAY_SONGID = @"https://play.google.com/music/play?u=0&songid=%@&pt=e";
 
 @implementation GoogleMusicAPI
 
@@ -70,7 +70,12 @@ NSString* HTTPS_PLAY_GOOGLE_COM_MUSIC_PLAY_SONGID = @"https://play.google.com/mu
 	[self.client dispatchPost:HTTPS_PLAY_GOOGLE_COM_MUSIC_SERVICES_LOADPLAYLIST withForm:form];
 	
 }
-/*- (void)getSongUrl:(Song)song (id<NSURLConnectionDelegate>)delegate {
-}*/
+
+- (void)getSongUrl:(NSString*)songID withDelegate:(id)delegate {
+	
+	[self.client setClientOnce:delegate];
+	
+	[self.client dispatchGet:[NSString stringWithFormat:HTTPS_PLAY_GOOGLE_COM_MUSIC_PLAY_SONGID, songID]];
+}
 
 @end

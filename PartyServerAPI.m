@@ -12,7 +12,6 @@
 NSString* baseUrl = @"https://eecs285party.appspot.com/";
 
 @implementation PartyServerAPI
-@synthesize client;
 @synthesize host;
 
 + (id)sharedManager {
@@ -26,7 +25,6 @@ NSString* baseUrl = @"https://eecs285party.appspot.com/";
 
 - (id)init {
 	if (self = [super init]) {
-		client = [[HttpClient alloc] init];
 		host = [@"" retain];
 	}
 	return self;
@@ -51,7 +49,7 @@ NSString* baseUrl = @"https://eecs285party.appspot.com/";
 	
 	NSLog(@"body sent to middle man is %@", builder.body);
 	
-	[client setClientOnce:delegate];
+	HttpClient* client = [[[HttpClient alloc] initWithDelegate:delegate] autorelease];
 	client.isStartup = FALSE;
 	
 	// will call -didSucceedUrlLoad method of delegate
@@ -84,16 +82,110 @@ NSString* baseUrl = @"https://eecs285party.appspot.com/";
 	
 	NSLog(@"body sent to middle man is %@", builder.body);
 	
-	[client setClientOnce:delegate];
+	HttpClient* client = [[[HttpClient alloc] initWithDelegate:delegate] autorelease];
+	client.isStartup = FALSE;
 	
 	[client dispatchGetWithRequest:req query:builder.body];
 	
 	[builder release];
 }
+
+- (void)setTimestamp:(id)delegate withDate:(NSDate*)date {
 	
+	NSString* addr = [baseUrl stringByAppendingString:@"set_timestamp"];
+	
+	NSLog(@"address is %@", addr);
+	
+	NSURL* url = [NSURL URLWithString:addr];
+	NSMutableURLRequest* req = [NSMutableURLRequest requestWithURL:url
+													   cachePolicy:NSURLRequestUseProtocolCachePolicy
+												   timeoutInterval:60.0];
+	
+	HttpBodyBuilder* builder = [[HttpBodyBuilder alloc] init];
+	[builder addField:@"host" withValue:self.host];
+
+	NSDateFormatter* formatter = [[NSDateFormatter alloc] init];
+	[formatter setDateFormat:@"MMddHHmmss"];
+	[builder addField:@"time" withValue:[formatter stringFromDate:date]];
+	
+	NSData* body_data = [builder close];
+	
+	NSLog(@"body sent to middle man is %@", builder.body);
+	
+	HttpClient* client = [[[HttpClient alloc] initWithDelegate:delegate] autorelease];
+	client.isStartup = FALSE;
+	
+	[client dispatchPostWithRequest:req body:body_data];
+	
+	[formatter release];
+	[builder release];
+}
+	 
+- (void)checkUpdates:(id)delegate lastModified:(NSDate*)date {
+	NSString* addr = [baseUrl stringByAppendingString:@"check_update"];
+	
+	NSLog(@"address is %@", addr);
+	
+	NSURL* url = [NSURL URLWithString:addr];
+	NSMutableURLRequest* req = [NSMutableURLRequest requestWithURL:url
+													   cachePolicy:NSURLRequestUseProtocolCachePolicy
+												   timeoutInterval:60.0];
+	
+	HttpBodyBuilder* builder = [[HttpBodyBuilder alloc] init];
+	[builder addField:@"host" withValue:self.host];
+	
+	NSDateFormatter* formatter = [[NSDateFormatter alloc] init];
+	[formatter setDateFormat:@"MMddHHmmss"];
+	[builder addField:@"last_mod" withValue:[formatter stringFromDate:date]];
+	
+	[builder close];
+	
+	NSLog(@"body sent to middle man is %@", builder.body);
+	
+	HttpClient* client = [[[HttpClient alloc] initWithDelegate:delegate] autorelease];
+	client.isStartup = FALSE;
+	
+	[client dispatchGetWithRequest:req query:builder.body];
+	
+	[formatter release];
+	[builder release];
+}
+
+- (void)addSongToQueue:(id)delegate songIndex:(NSIndexPath*)indexPath {
+	NSString* addr = [baseUrl stringByAppendingString:@"action"];
+	
+	NSLog(@"address is %@", addr);
+	
+	NSURL* url = [NSURL URLWithString:addr];
+	NSMutableURLRequest* req = [NSMutableURLRequest requestWithURL:url
+													   cachePolicy:NSURLRequestUseProtocolCachePolicy
+												   timeoutInterval:60.0];
+	
+	HttpBodyBuilder* builder = [[HttpBodyBuilder alloc] init];
+	[builder addField:@"host" withValue:self.host];
+	
+	NSDateFormatter* formatter = [[NSDateFormatter alloc] init];
+	[formatter setDateFormat:@"MMddHHmmss"];
+	[builder addField:@"time" withValue:[formatter stringFromDate:[NSDate date]]];
+	
+	[builder addField:@"pl_index" withValue:[NSString stringWithFormat:@"%d", indexPath.section]];
+	[builder addField:@"song_index" withValue:[NSString stringWithFormat:@"%d", indexPath.row]];
+	[builder addField:@"action" withValue:[NSString stringWithFormat:@"%d", 1]]; // add, not delete
+	
+	NSData* body_data = [builder close];
+	
+	NSLog(@"body sent to middle man is %@", builder.body);
+	
+	HttpClient* client = [[[HttpClient alloc] initWithDelegate:delegate] autorelease];
+	client.isStartup = FALSE;
+	
+	[client dispatchPostWithRequest:req body:body_data];
+	
+	[formatter release];
+	[builder release];
+}
 
 - (void)dealloc {
-	[client release];
 	[super dealloc];
 }
 

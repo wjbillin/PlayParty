@@ -33,6 +33,16 @@ NSString* HTTPS_PLAY_GOOGLE_COM_MUSIC_SERVICES = @"https://play.google.com/music
 	return self;
 }
 
+- (id)initWithDelegate:(id)delegate {
+	authorizationToken = [@"" retain];
+	cookie = [@"" retain];
+	rawCookie = [@"" retain];
+	receivedData = [[NSMutableData data] retain];
+	client = [delegate retain];
+	isStartup = true;
+	return self;
+}
+
 - (void)setClientOnce:(id)delegate {
 	self.client = delegate;
 }
@@ -79,13 +89,6 @@ NSString* HTTPS_PLAY_GOOGLE_COM_MUSIC_SERVICES = @"https://play.google.com/music
 }
 
 - (void)dispatchGet:(NSString*)address {
-	// HttpURLConnection connection = (HttpURLConnection) adjustAddress(address).toURL().openConnection();
-	// connection.setRequestMethod("GET");
-	// connection.setRequestProperty("Cookie", rawCookie);
-	// if(authorizationToken != null)
-	// {
-	// connection.setRequestProperty("Authorization", String.format("GoogleLogin auth=%1$s", authorizationToken));
-	// }
 	NSMutableURLRequest* request = [self prepareConnection:address withMethod:@"GET"];
 	
 	NSURLConnection * connection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
@@ -241,11 +244,7 @@ NSString* HTTPS_PLAY_GOOGLE_COM_MUSIC_SERVICES = @"https://play.google.com/music
     // receivedData is declared as a method instance elsewhere
     NSLog(@"Succeeded! Received %d bytes of data",[self.receivedData length]);
 	
-	//NSLog(@"%@", [[[NSString alloc] initWithData:self.receivedData encoding:NSUTF8StringEncoding] autorelease]);
-	
     [connection release];
-	
-	
 	
 	if (self.isStartup) {
 		// this will fire off another post request to authorize listening to music
